@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | SHS Illustrations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="Portfolio/icons/LogoSimple.png" alt="SHS Illustrations Logo" class="logo-image">
+      <span>SHS Illustrations</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Services Section -->
+<section class="services-page">
+  <h2>Our Services</h2>
+
+  <!-- Headline Navigation for Services -->
+  <div class="service-headlines">
+    <button class="service-btn active" onclick="showService('models')">3D Molecular Models</button>
+    <button class="service-btn" onclick="showService('animations')">Animations</button>
+    <button class="service-btn" onclick="showService('figures')">Figures for Publications</button>
+    <button class="service-btn" onclick="showService('outreach')">Educational Outreach</button>
+    <button class="service-btn" onclick="showService('presentations')">Presentation Design</button>
+  </div>
+
+  <!-- Panels for Each Service (First panel is visible by default) -->
+  <div id="models" class="service-panel active-panel">
+    <h3>3D Molecular Models</h3>
+    <p>Creating detailed 3D models to bring complex scientific concepts to life.</p>
+    <p><strong>Estimated Price Range:</strong> $200 - $500</p>
+    <p><strong>Estimated Time to Completion:</strong> 1-2 weeks</p>
+    <div class="contact-button-container">
+      <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <img src="Portfolio/figures/atp8a2 front bilayer.png" alt="3D Molecular Model Example" class="service-example">
+  </div>
+
+  <div id="animations" class="service-panel">
+    <h3>Animations</h3>
+    <p>Engaging and scientifically accurate animations to communicate intricate biological processes clearly and effectively.</p>
+    <p><strong>Estimated Price Range:</strong> $500 - $1500</p>
+    <p><strong>Estimated Time to Completion:</strong> 2-4 weeks</p>
+    <div class="contact-button-container">
+      <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <video src="portfolio/animations/CrisprCas9-ABE-6VPC.mp4" muted loop autoplay class="service-example"></video>
+  </div>
+
+  <div id="figures" class="service-panel">
+    <h3>Figures for Publications</h3>
+    <p>Designing visually compelling figures that meet journal standards, ensuring your research stands out and is easily understood.</p>
+    <p><strong>Estimated Price Range:</strong> $100 - $300</p>
+    <p><strong>Estimated Time to Completion:</strong> 1 week</p>
+    <div class="contact-button-container">
+      <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <img src="Portfolio/figures/cellcycle.jpg" alt="3D Molecular Model Example" class="service-example">
+
+  </div>
+
+  <div id="outreach" class="service-panel">
+    <h3>Educational Outreach</h3>
+    <p>Creating materials aimed at educating a broader audience, making science accessible and visually engaging.</p>
+    <p><strong>Estimated Price Range:</strong> $150 - $400</p>
+    <p><strong>Estimated Time to Completion:</strong> 1-3 weeks</p>
+    <div class="contact-button-container">
+      <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <img src="Portfolio/figures/foodweb.png" alt="3D Molecular Model Example" class="service-example">
+  </div>
+
+  <div id="presentations" class="service-panel">
+    <h3>Presentation Design</h3>
+    <p>Custom presentation designs that make an impact, combining aesthetics with clarity to elevate scientific talks.</p>
+    <p><strong>Estimated Price Range:</strong> $200 - $500</p>
+    <p><strong>Estimated Time to Completion:</strong> 1-2 weeks</p>
+    <div class="contact-button-container">
+      <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <video src="portfolio/animations/presentationslides.mov" muted loop autoplay class="service-example"></video>
+  </div>
+</section>
+
+<!-- JavaScript to Handle Panel Display -->
+<script>
+  function showService(serviceId) {
+    const panels = document.querySelectorAll('.service-panel');
+    const buttons = document.querySelectorAll('.service-btn');
+
+    // Hide all panels and remove 'active' class from all buttons
+    panels.forEach(panel => panel.classList.remove('active-panel'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Show the selected panel and add 'active' class to the clicked button
+    document.getElementById(serviceId).classList.add('active-panel');
+    document.querySelector(`button[onclick="showService('${serviceId}')"]`).classList.add('active');
+  }
+
+  // Show the first panel by default on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    showService('models'); // Display 'models' panel by default
+  });
+</script>
+
+</body>
+</html>

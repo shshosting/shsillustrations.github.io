@@ -1,0 +1,957 @@
+/* Reset and general styles */
+* {
+  margin: 1;
+  padding: 0.2;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  line-height: 0.3;
+}
+
+header {
+  background: #ffffff;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('Portfolio/animations/Sana.mp4') no-repeat center center;
+  background-size: 100%;
+  background-position: center center;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+  
+
+.hero-content {
+  position: absolute;
+  top: 10%; /* Adjust this percentage to move the content higher or lower */
+  left: 5%; /* Adjust this percentage to position content horizontally */
+  text-align: left;
+  max-width: 800px; /* Optional: Limit width for better readability */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-button {
+  background: #70A7E1; /* Light blue background */
+  color: #e6f7ff; /* Very light blue text */
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 15px; /* More rounded edges */
+  border: none; /* Removes any border */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background: #a0d6ff; /* Slightly darker blue on hover */
+}
+
+
+.portfolio {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  position: flex;
+  width: 1000px;
+  max-width: 1000px;
+  aspect-ratio: 16/9; /* Maintain a consistent aspect ratio */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: flex;
+}
+
+.portfolio-item-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.contact {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 1rem;
+  background: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+// <uniquifier> Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+.nunito-<fontone> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Aligns logo and text vertically */
+}
+
+.logo-image {
+  width: 40px; /* Adjust the width to fit your design */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  margin-right: 10px; /* Adds space between the logo and text */
+}
+
+.logo span {
+  font-family: 'Nunito', sans-serif; /* Applying the Gothic font if needed */
+  font-size: 1.0rem;
+  color: #333; /* Change to your desired color */
+}
+
+.services {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 1.3 rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: #030170;
+}
+
+
+.service-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .service-item {
+    flex: 1 1 100%; /* Service boxes take full width on smaller screens */
+    padding: 1.5rem;
+  }
+}
+
+/* Services Page Styling */
+.services-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #030170;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-detail {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+}
+
+.service-detail h3 {
+  font-size: 1.5rem;
+  color: #030170;
+  margin-bottom: 1rem;
+}
+
+.service-detail p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Portfolio Page Styling */
+.portfolio-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.portfolio-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #030170;
+}
+
+.portfolio-section {
+  margin: 2rem 0;
+}
+
+.portfolio-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #030170;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Portfolio Page Styling */
+.portfolio-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.portfolio-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem; /* Increased margin for more space below the heading */
+  color: #030170;
+}
+
+.portfolio-section {
+  margin: 3rem 0; /* Adds vertical spacing between portfolio sections */
+}
+
+.portfolio-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #030170;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #030170;
+  line-height: 1.2; /* Increase line height for better spacing */
+}
+
+.service-detail h3 {
+  font-size: 1.5rem;
+  color: #030170;
+  margin-bottom: 1rem;
+  line-height: 1.3; /* Ensures no overlap if the header wraps */
+}
+
+/* Ensuring links are responsive and take full width */
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%; /* Ensures each link fills the container */
+  display: block; /* Makes the link a block element */
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%; /* Full width within the container */
+  max-width: 250px; /* Limits max width for each item */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.4; /* Ensures clear spacing for wrapped lines */
+  flex: 1 1 250 px;
+}
+
+.service-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2; /* Ensures no overlap if heading wraps */
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5; /* Clear spacing for paragraph text */
+  margin-bottom: 0; /* Prevents extra spacing */
+}
+
+.service-link:hover .service-item {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between boxes */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 250px; /* Makes each link take 250px min width and fill available space */
+  max-width: 300px; /* Prevents excessive width on large screens */
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.4;
+  height: 100%; /* Ensures even height for all boxes */
+}
+
+.service-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.service-link:hover .service-item {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #030170;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.4;
+}
+
+.service-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* Ensures image/video fits nicely without distortion */
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  font-size: 1.3rem;
+  color: #030170;
+  margin-bottom: 0.5rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Box Container */
+.box {
+  width: 20%;
+  max-width: 860px;
+  aspect-ratio: 16 / 9;
+  overflow: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+}
+
+/* Image or Video Inside the Box */
+.box img,
+.box video {
+  width: 20%;
+  height: 100%;
+  max-width: 20%; /* Ensures video or image does not exceed box size */
+  max-height: 20%; /* Prevents the video from expanding beyond the box */
+  object-fit: cover; /* Ensures the content fills the box without distortion */
+  border-radius: inherit; /* Matches border radius of the box */
+}
+
+/* Box Container */
+.box {
+  width: 100%;
+  max-width: 1920px; /* Optional: limits width on larger screens */
+  aspect-ratio: 16 / 9; /* Maintains 16:9 aspect ratio for the box */
+  overflow: hidden; /* Clips any content that exceeds the box dimensions */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+}
+
+/* Image or Video Inside the Box */
+.box img,
+.box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video/image fills the box without distortion */
+  max-width: 100%; /* Prevents video from exceeding the box width */
+  max-height: 100%; /* Prevents video from exceeding the box height */
+  border-radius: inherit;
+}
+
+/* Services Page Styling */
+.services-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #030170;
+}
+
+/* Service Container with Larger Box Size */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Box Styling with Increased Size */
+.box {
+  width: 100%;
+  max-width: 400px; /* Increases the box width */
+  min-height: 400px; /* Sets a minimum height for the box */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  padding: 1.5rem; /* Adds padding inside the box */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Image or Video Styling */
+.box img,
+.box video {
+  width: 150%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Title Styling */
+.box h3 {
+  font-size: 1.5rem;
+  color: #030170;
+  margin: 1rem 0 0.5rem;
+}
+
+/* Description Text Styling */
+.box p {
+  font-size: 1rem;
+  line-height: 1.5; /* Ensures proper spacing between lines */
+  color: #333;
+  margin: 0; /* Removes default margin to avoid overflow */
+  flex-grow: 1;
+}
+
+/* Contact Page Styling */
+.contact-page {
+  padding: 4rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-page h2 {
+  font-size: 2.5rem;
+  color: #030170;
+  margin-bottom: 3rem;
+}
+
+/* Base styling for paragraph on Contact page */
+.contact-page p {
+  font-size: 1rem;
+  line-height: 1.6; /* Increase line height for better readability */
+  color: #333;
+  margin-bottom: 3rem;
+  padding: 0 1rem; /* Adds padding on the sides */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-page p {
+    font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+    line-height: 1.4; /* Maintain line height to prevent overlap */
+    padding: 0 0.5rem; /* Reduce padding to fit the screen better */
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #030170;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #050d89;
+}
+
+/* Ensures the entire box is clickable */
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.box {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 400px; /* Controls the width to avoid overly long lines */
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3; /* Ensures spacing between lines in headings */
+  word-wrap: break-word; /* Forces long words to break and wrap onto the next line */
+}
+
+.box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Services Page Styling */
+.services-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  color: #030170;
+  margin-bottom: 2rem;
+}
+
+/* Headline Navigation for Services */
+.service-headlines {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.service-btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  color: #333;
+}
+
+.service-btn.active {
+  background-color: #030170;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Service Panel */
+.service-panel {
+  display: none; /* All panels hidden by default */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.active-panel {
+  display: block;
+  background-color: #f0f4fc; /* Distinct background color for selected panel */
+  transform: scale(1.02); /* Slightly larger to highlight active panel */
+}
+
+.service-panel h3 {
+  font-size: 1.8rem;
+  color: #030170;
+  margin-bottom: 1.5rem;
+}
+
+.service-panel p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.0rem 1.2rem;
+  background-color: #030170;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #050d89;
+}
+
+/* Service Example Styling */
+.service-example {
+  width: 100%;
+  max-width: 600px; /* Optional: limit max width for a cleaner look */
+  margin-top: 1.5rem; /* Adds spacing above the example */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for video elements */
+.service-panel video.service-example {
+  max-height: 300px; /* Limit video height for better display */
+  object-fit: cover;
+}
+
+/* Service Panel */
+.service-panel {
+  text-align: center; /* Centers text and elements inside the panel */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Button Centering */
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Contact Button Styling */
+.contact-button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background-color: #030170;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #050d89;
+}
+
+/* Service Example Styling (Image/Video) */
+.service-example {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1.5rem; /* Adds space above the example */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for video elements */
+.service-panel video.service-example {
+  max-height: 300px; /* Limit video height for better display */
+  object-fit: cover;
+}
+
+/* Service Panel */
+.service-panel {
+  display: none; /* Hide all panels initially */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.active-panel {
+  display: block; /* Only the active panel is shown */
+}
+
+/* Services Page Styling */
+.services-page {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  color: #030170;
+  margin-bottom: 2rem;
+}
+
+/* Service Panel */
+.service-panel {
+  display: none; /* Hide all panels initially */
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.active-panel {
+  display: block; /* Only the active panel is shown */
+}
+
+/* Headline Navigation */
+.service-headlines {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.service-btn {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.service-btn.active {
+  background-color: #030170;
+  color: #fff;
+}
+
+/* Contact Button */
+.contact-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #030170;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #050d89;
+}
+
+/* Service Example (Image/Video) */
+.service-example {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

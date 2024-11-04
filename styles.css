@@ -816,7 +816,7 @@ object-fit: cover;
 .service-panel {
 text-align: center; /* Centers text and elements inside the panel */
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 padding: 2rem;
 background-color: #f9f9f9;
@@ -870,7 +870,7 @@ object-fit: cover;
 display: none; /* Hide all panels initially */
 text-align: center;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 padding: 2rem;
 background-color: #f9f9f9;
@@ -978,7 +978,7 @@ font-size: 1.8rem; /* Make headings smaller for mobile */
 
 /* Layout adjustments for containers */
 .service-headlines, .portfolio-gallery {
-flex-direction: column; /* Stack items vertically */
+flex-direction: row; /* Stack items vertically */
 align-items: center; /* Center items on mobile */
 }
 
@@ -1023,7 +1023,7 @@ font-size: 1.8rem; /* Make headings smaller for mobile */
 
 /* Layout adjustments for containers */
 .service-headlines, .portfolio-gallery {
-flex-direction: column; /* Stack items vertically */
+flex-direction: row; /* Stack items vertically */
 align-items: center; /* Center items on mobile */
 }
 

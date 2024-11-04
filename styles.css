@@ -61,7 +61,7 @@ text-decoration: none;
 /* Hero Content */
 .hero-content {
   position: absolute;
-  top: 20vh;
+  top: 30vh;
   left: 5vw;
   max-width: 90%;
   color: #fff;
@@ -108,7 +108,7 @@ text-decoration: none;
   }
 
   .hero-content {
-    top: 30vh;
+    top: 15vh;
     left: 5vh;
     text-align: center;
   }

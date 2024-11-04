@@ -996,8 +996,12 @@ footer {
 }
 
 /* Responsive adjustments for screens 768px and smaller */
-@media (max-width: 768px) {
-  
+@media (max-width: 1170px) {
+  .logo span {
+    white-space: nowrap;
+      font-size: 1rem;
+  }
+}
   /* General font size and spacing */
   body {
     font-size: 16px; /* Adjust base font size */

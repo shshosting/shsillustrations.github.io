@@ -45,33 +45,34 @@ text-decoration: none;
   width: 100%;
   position: relative;
   color: #fff;
-  overflow: hidden; /* Prevents overflow on smaller screens */
+  overflow: hidden;
 }
 
 .hero-content {
   position: absolute;
-  top: 15%; /* Centered higher on the screen */
+  top: 20%; /* Positions hero content higher */
   left: 5%;
-  max-width: 90%; /* Prevents content from exceeding container width */
+  max-width: 90%; /* Allows flexibility in width */
   color: #fff;
   text-align: left;
 }
 
+/* Responsive Font Sizes Using Clamp */
 .hero-content h1 {
-  font-size: 6vw; /* Scales based on viewport width */
-  margin-bottom: 1rem; /* Reduce large margin to fit better */
+  font-size: clamp(2rem, 4vw, 4rem); /* Adjusts font size with screen width */
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 2.5vw; /* Scales with screen width */
-  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem); /* Scales text responsively */
+  margin-bottom: 1rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .cta-button {
-  font-size: 2vw;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   padding: 0.5rem 1rem;
   background: #70A7E1;
   color: #e6f7ff;
@@ -86,17 +87,18 @@ text-decoration: none;
   background: #a0d6ff;
 }
 
-/* Adjustments for smaller screens */
+/* Adjustments for Smaller Screens */
 @media (max-width: 768px) {
   .hero {
-    height: 50vh; /* Reduces height on smaller screens */
+    height: 50vh; /* Adjusts height for smaller screens */
   }
 
   .hero-content {
-    top: 20%; /* Adjust content positioning for smaller screens */
+    top: 15%; /* Center content better on smaller screens */
     left: 5%;
-    text-align: center; /* Center aligns text for smaller screens */
+    text-align: center; /* Center aligns text for better layout on mobile */
   }
+}
 
   .hero-content h1 {
     font-size: 8vw;

@@ -996,7 +996,7 @@ footer {
 }
 
 /* Responsive adjustments for screens 768px and smaller */
-@media (max-width: 1170px) {
+@media (max-width: 768px) {
   .logo span {
     white-space: nowrap;
       font-size: 1rem;

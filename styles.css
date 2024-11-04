@@ -1012,6 +1012,10 @@ footer {
 }
   /* General font size and spacing */
   body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
     font-size: 16px; /* Adjust base font size */
     margin: 0; /* Remove any default body margin */
     padding: 0;

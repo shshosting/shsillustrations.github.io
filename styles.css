@@ -17,6 +17,13 @@ header {
   color: #fff;
 }
 
+header, .content-container {
+  width: 100%;
+  max-width: 100vw; /* Prevents overflow on smaller screens */
+  padding: 0 20px; /* Optional padding for a cleaner look */
+  box-sizing: border-box; /* Ensures padding doesn’t increase element width */
+}
+
 header nav {
   display: flex;
   justify-content: space-between;

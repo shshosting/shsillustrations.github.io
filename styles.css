@@ -60,7 +60,7 @@ text-decoration: none;
 
 /* Hero Content */
 .hero-content {
-  position: absolute;
+  position: relative;
   top: 30vh;
   left: 5vw;
   max-width: 90%;
@@ -108,6 +108,7 @@ text-decoration: none;
   }
 
   .hero-content {
+    position: relative;
     top: 15vh;
     left: 5vh;
     text-align: center;

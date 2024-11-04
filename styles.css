@@ -955,3 +955,42 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive adjustments for screens 768px and smaller */
+@media (max-width: 768px) {
+  
+  /* Adjust general text size */
+  body {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    font-size: 1.5em; /* Smaller heading size */
+    line-height: 1.2; /* Adds spacing to prevent overlap */
+  }
+
+  /* Adjust spacing for specific sections */
+  .services-page h2, .portfolio-page h2 {
+    margin-top: 1rem; /* Reduces space above headings */
+    font-size: 1.8rem; /* Make headings smaller for mobile */
+  }
+
+  /* Layout adjustments for containers */
+  .service-headlines, .portfolio-gallery {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items on mobile */
+  }
+
+  /* Reduce padding and margins to fit better on mobile */
+  .service-btn, .contact-button {
+    padding: 0.5rem 1rem; /* Smaller button size */
+    font-size: 1rem; /* Adjust font size in buttons */
+  }
+
+  /* Specific fixes for images and videos */
+  .service-example {
+    max-width: 100%; /* Ensure images and videos don’t overflow */
+    height: auto; /* Keeps aspect ratio */
+  }
+}

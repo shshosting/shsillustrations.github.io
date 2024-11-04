@@ -17,16 +17,6 @@ header {
   color: #fff;
 }
 
-header, .services-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100vw; /* Prevents overflow on smaller screens */
-  padding: 10px 20px; /* Optional padding for a cleaner look */
-  box-sizing: border-box; /* Ensures padding doesn’t increase element width */
-}
-
 header nav {
   display: flex;
   justify-content: space-between;

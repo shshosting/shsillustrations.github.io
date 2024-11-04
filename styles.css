@@ -37,50 +37,80 @@ color: #000000;
 text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
-background: url('Sana.mp4') no-repeat center center;
-background-size: 100%;
-background-position: center center;
-height: 700px;
-width: 100%;
-position: relative;
-color: #fff;
+  background: url('Sana.mp4') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  overflow: hidden; /* Prevents overflow on smaller screens */
 }
 
-
 .hero-content {
-position: absolute;
-top: 10%; /* Adjust this percentage to move the content higher or lower */
-left: 5%; /* Adjust this percentage to position content horizontally */
-text-align: left;
-max-width: 800px; /* Optional: Limit width for better readability */
+  position: absolute;
+  top: 15%; /* Centered higher on the screen */
+  left: 5%;
+  max-width: 90%; /* Prevents content from exceeding container width */
+  color: #fff;
+  text-align: left;
 }
 
 .hero-content h1 {
-font-size: 4rem;
-margin-bottom: 10rem;
-line-height: 1.2;
+  font-size: 6vw; /* Scales based on viewport width */
+  margin-bottom: 1rem; /* Reduce large margin to fit better */
+  line-height: 1.2;
 }
 
 .hero-content p {
-margin-bottom: 3rem;
-line-height: 1.5;
-color: rgba(255, 255, 255, 0.6);
+  font-size: 2.5vw; /* Scales with screen width */
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .cta-button {
-background: #70A7E1; /* Light blue background */
-color: #e6f7ff; /* Very light blue text */
-padding: 0.8rem 1.5rem;
-text-decoration: none;
-border-radius: 15px; /* More rounded edges */
-border: none; /* Removes any border */
-font-weight: bold;
-font-size: 1rem;
+  font-size: 2vw;
+  padding: 0.5rem 1rem;
+  background: #70A7E1;
+  color: #e6f7ff;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s;
 }
 
 .cta-button:hover {
-background: #a0d6ff; /* Slightly darker blue on hover */
+  background: #a0d6ff;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh; /* Reduces height on smaller screens */
+  }
+
+  .hero-content {
+    top: 20%; /* Adjust content positioning for smaller screens */
+    left: 5%;
+    text-align: center; /* Center aligns text for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 8vw;
+  }
+
+  .hero-content p {
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+
+  .cta-button {
+    font-size: 4vw;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 

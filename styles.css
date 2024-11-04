@@ -17,7 +17,7 @@ header {
   color: #fff;
 }
 
-header, .content-container {
+header, .services-container {
   width: 100%;
   max-width: 100vw; /* Prevents overflow on smaller screens */
   padding: 0 20px; /* Optional padding for a cleaner look */
@@ -1051,5 +1051,33 @@ footer {
   .service-example, .portfolio-item img {
     max-width: 100%; /* Ensure images and videos don’t overflow */
     height: auto; /* Keep aspect ratio */
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensures any extra video area is hidden */
+}
+
+.hero-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the video */
+.hero-content video {
+  width: 100%;         /* Video takes full width of container */
+  height: auto;        /* Maintains video aspect ratio */
+  max-height: 100vh;   /* Limits height to fit within the viewport */
+  object-fit: cover;   /* Ensures video covers container without stretching */
+}
+
+@media (max-width: 768px) {
+  .hero-content video {
+    max-height: 50vh; /* Adjusts video height for smaller screens */
   }
 }

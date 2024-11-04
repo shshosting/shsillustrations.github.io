@@ -61,7 +61,7 @@ text-decoration: none;
 /* Hero Content */
 .hero-content {
   position: absolute;
-  top: 14vh;
+  top: 10vh;
   left: 5vw;
   max-width: 90%;
   color: #fff;
@@ -72,14 +72,14 @@ text-decoration: none;
 /* Font Sizes with Clamp */
 .hero-content h1 {
   font-size: clamp(1.5rem, 4vw, 5rem); /* Scales with screen but caps size */
-  margin-bottom: 2rem;
-  line-height: 1.5;
+  margin-bottom: 3rem;
+  line-height: 2;
 }
 
 .hero-content p {
   font-size: clamp(1rem, 1.5vw, 2rem); /* Scales text, limits large sizes */
-  margin-bottom: 2rem;
-  line-height: 1.5;
+  margin-bottom: 3rem;
+  line-height: 2;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -93,6 +93,7 @@ text-decoration: none;
   font-weight: bold;
   border: none;
   transition: background 0.3s;
+  margin-top: 1.5rem;
 }
 
 .cta-button:hover {
@@ -106,8 +107,8 @@ text-decoration: none;
   }
 
   .hero-content {
-    top: 30vh;
-    left: 5vw;
+    top: 0;
+    left: 0;
     text-align: center;
   }
 

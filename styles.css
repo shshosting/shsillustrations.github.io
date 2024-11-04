@@ -994,3 +994,44 @@ footer {
     height: auto; /* Keeps aspect ratio */
   }
 }
+
+/* Responsive adjustments for screens 768px and smaller */
+@media (max-width: 768px) {
+  
+  /* General font size and spacing */
+  body {
+    font-size: 16px; /* Adjust base font size */
+    margin: 0; /* Remove any default body margin */
+    padding: 0;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    font-size: 1.5em; /* Smaller heading size */
+    line-height: 1.2; /* Adds spacing to prevent overlap */
+  }
+
+  /* Page Headings (e.g., "Our Services", "Our Portfolio") */
+  .services-page h2, .portfolio-page h2 {
+    margin-top: 1rem; /* Adjust as needed */
+    font-size: 1.8rem; /* Make headings smaller for mobile */
+  }
+
+  /* Layout adjustments for containers */
+  .service-headlines, .portfolio-gallery {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items on mobile */
+  }
+
+  /* Button adjustments */
+  .service-btn, .contact-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Image and video adjustments */
+  .service-example, .portfolio-item img {
+    max-width: 100%; /* Ensure images and videos don’t overflow */
+    height: auto; /* Keep aspect ratio */
+  }
+}

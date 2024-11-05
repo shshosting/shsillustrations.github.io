@@ -1112,26 +1112,30 @@ height: auto; /* Keep aspect ratio */
   font-size: 2.5rem;
   color: #030170;
   margin-bottom: 2rem;
+  text-align: center; /* Ensures the heading is centered */
 }
 
 .about-container {
   display: flex;
   justify-content: center;
+  align-items: center; /* Centers items vertically if needed */
   gap: 4rem;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centers the container */
 }
 
 .profile {
   flex: 1 1 300px;
+  max-width: 300px;
   text-align: center;
   padding: 1rem;
+  margin: 0 auto; /* Centers individual profiles */
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover;
   margin-bottom: 1rem;

@@ -1129,7 +1129,8 @@ height: auto; /* Keep aspect ratio */
   max-width: 800px; /* Limits width for readability */
   margin: 0 auto; /* Centers the paragraph */
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8; /* Adjusted line height for better spacing */
+  padding: 0 1rem; /* Adds padding for extra space */
   color: #333;
 }
 

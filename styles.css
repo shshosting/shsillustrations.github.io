@@ -273,7 +273,7 @@ padding: 1.5rem;
 
 /* Services Page Styling */
 .services-page {
-padding: 4rem 1rem;
+padding-top: 2rem;
 text-align: center;
 }
 
@@ -487,7 +487,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .services-page {
-padding: 4rem 1rem;
+padding-top: 2rem;
 text-align: center;
 }
 
@@ -588,7 +588,7 @@ border-radius: inherit;
 
 /* Services Page Styling */
 .services-page {
-padding: 4rem 1rem;
+padding-top: 2rem;
 text-align: center;
 }
 
@@ -769,7 +769,7 @@ margin-bottom: 0;
 
 /* Services Page Styling */
 .services-page {
-padding: 4rem 1rem;
+padding-top: 2rem;
 text-align: center;
 }
 
@@ -941,7 +941,7 @@ display: block; /* Only the active panel is shown */
 
 /* Services Page Styling */
 .services-page {
-padding: 4rem 1rem;
+padding-top: 2rem;
 text-align: center;
 }
 

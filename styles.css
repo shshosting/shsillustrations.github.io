@@ -1100,3 +1100,52 @@ max-width: 100%; /* Ensure images and videos don’t overflow */
 height: auto; /* Keep aspect ratio */
 }
 }
+
+/* About Us Section */
+.about-us {
+  padding: 4rem 1rem;
+  background-color: #f7f7f7; /* Optional background color for distinction */
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #030170;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.profile p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 0.2rem 0;
+}

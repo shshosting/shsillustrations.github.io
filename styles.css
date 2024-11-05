@@ -37,6 +37,12 @@ color: #000000;
 text-decoration: none;
 }
 
+/* Styles the active link in the header */
+header nav ul li a.active {
+  font-weight: bold;
+  color: #333; /* Optional: change color to distinguish further */
+}
+
 
 /* Hero Section */
 .hero {

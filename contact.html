@@ -51,5 +51,18 @@
   <p>&copy; 2024 SHS Illustrations. All rights reserved.</p>
 </footer>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll("header nav ul li a");
+    
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPath.split('/').pop()) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

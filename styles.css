@@ -35,6 +35,7 @@ margin: 0 1rem;
 header nav ul li a {
 color: #000000;
 text-decoration: none;
+font-size: 1.2rem;
 }
 
 /* Styles the active link in the header */
@@ -231,7 +232,7 @@ align-items: center; /* Aligns logo and text vertically */
 }
 
 .logo-image {
-width: 40px; /* Adjust the width to fit your design */
+width: 60px; /* Adjust the width to fit your design */
 height: auto; /* Ensures the aspect ratio is maintained */
 margin-right: 10px; /* Adds space between the logo and text */
 }

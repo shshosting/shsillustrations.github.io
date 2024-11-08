@@ -42,8 +42,6 @@ font-size: 1.2rem;
 header nav ul li a.active {
   font-weight: bold;
   color: #333; /* Optional: change color to distinguish further */
-  border-bottom: 3px solid #333; /* Add bold bottom border */
-  padding-bottom: 0.5rem; /* Adjust space between text and border */
 }
 
 

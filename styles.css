@@ -1381,5 +1381,6 @@ h3 {
     border-top: 1px solid #e0e0e0; /* Faint grey line */
     width: 75%; /* Width of the line */
     margin: auto; /* Center the line within the container */
+    margin-bottom: 20px;
 }
 

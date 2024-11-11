@@ -1368,3 +1368,17 @@ h3 {
     line-height: 1.5;
     margin: 0.2rem 0;
 }
+
+/* Style for the Divider Line */
+.divider {
+    border: none;
+    /* Remove default border */
+    
+    border-top: 1px solid #e0e0e0;
+    /* Faint grey line */
+    
+    margin: 2rem 0;
+    /* Space above and below line */
+    
+    width: 100%;
+}

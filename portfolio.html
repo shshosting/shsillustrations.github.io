@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | SHS Illustrations</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SHS Illustrations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navigation -->
-<header>
-  <nav>
-    <div class="logo">
-      <a href="index.html">
-        <img src="LogoSimple.png" alt="SHS Illustrations Logo" class="logo-image">
-      </a>
-    </div>
-    <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="LogoSimple.png" alt="SHS Illustrations Logo" class="logo-image">
+                </a>
+            </div>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Portfolio Section -->
-<section class="portfolio-page">
-  <h2>Our Portfolio</h2>
+    <!-- Portfolio Section -->
+    <section class="portfolio-page">
 
-  <!-- 3D Animations Carousel -->
-  <div class="portfolio-section">
-    <h3>Animations</h3>
-    <div class="carousel">
-      <div class="carousel-item"><img src="Sana.mp4" alt="Animation 1"></div>
-      <div class="carousel-item"><img src="PRPH2 compltete intro0001-0499.mp4" alt="Animation 2"></div>
-      <div class="carousel-item"><img src="Karlanimation.mp4" alt="Animation 3"></div>
-      <div class="carousel-item"><img src="tessagithub.mp4" alt="Animation 3"></div>
-      <div class="carousel-item"><img src="slidedesign.mov" alt="Animation 3"></div>
-      <div class="carousel-item"><img src="sanatext.mp4" alt="Animation 3"></div>
-    </div>
-  </div>
+        <!-- 3D Animations Carousel -->
+        <div class="portfolio-section">
+            <h3>Animations</h3>
+            <div class="carousel">
+                <div class="carousel-item"><img src="Sana.mp4" alt="Animation 1"></div>
+                <div class="carousel-item"><img src="PRPH2 compltete intro0001-0499.mp4" alt="Animation 2"></div>
+                <div class="carousel-item"><img src="Karlanimation.mp4" alt="Animation 3"></div>
+                <div class="carousel-item"><img src="tessagithub.mp4" alt="Animation 3"></div>
+                <div class="carousel-item"><img src="slidedesign.mov" alt="Animation 3"></div>
+                <div class="carousel-item"><img src="sanatext.mp4" alt="Animation 3"></div>
+            </div>
+        </div>
 
-  <!-- Scientific Journal Covers Carousel -->
-  <div class="portfolio-section">
-    <h3>Figures</h3>
-    <div class="carousel">
-      <div class="carousel-item"><img src="abe.png" alt="Cover 1"></div>
-      <div class="carousel-item"><img src="cover.png" alt="Cover 3"></div>
-      <div class="carousel-item"><img src="cellcycle.jpg" alt="Cover 3"></div>
-      <div class="carousel-item"><img src="styles2.png" alt="Cover 3"></div>
-      <div class="carousel-item"><img src="NSERC Photoreceptor.png" alt="Cover 2"></div>
-      <div class="carousel-item"><img src="cellmodel.png" alt="Cover 3"></div>
-      <div class="carousel-item"><img src="annewgledisc.png" alt="Cover 3"></div>
-      <div class="carousel-item"><img src="LNPBfinal.png" alt="Cover 3"></div>
+        <!-- Scientific Journal Covers Carousel -->
+        <div class="portfolio-section">
+            <h3>Figures</h3>
+            <div class="carousel">
+                <div class="carousel-item"><img src="abe.png" alt="Cover 1"></div>
+                <div class="carousel-item"><img src="cover.png" alt="Cover 3"></div>
+                <div class="carousel-item"><img src="cellcycle.jpg" alt="Cover 3"></div>
+                <div class="carousel-item"><img src="styles2.png" alt="Cover 3"></div>
+                <div class="carousel-item"><img src="NSERC Photoreceptor.png" alt="Cover 2"></div>
+                <div class="carousel-item"><img src="cellmodel.png" alt="Cover 3"></div>
+                <div class="carousel-item"><img src="annewgledisc.png" alt="Cover 3"></div>
+                <div class="carousel-item"><img src="LNPBfinal.png" alt="Cover 3"></div>
 
-    </div>
-  </div>
+            </div>
+        </div>
 
-  <!-- Additional categories as needed -->
-</section>
+        <!-- Additional categories as needed -->
+    </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll("header nav ul li a");
-    
-    navLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPath.split('/').pop()) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll("header nav ul li a");
+
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPath.split('/').pop()) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
 
 </body>
+
 </html>

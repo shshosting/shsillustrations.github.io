@@ -1,1167 +1,1370 @@
 /* Reset and general styles */
+
 * {
-margin: 1;
-padding: 0.2;
-box-sizing: border-box;
+    margin: 1;
+    padding: 0.2;
+    box-sizing: border-box;
 }
 
 body {
-font-family: 'Nunito', sans-serif;
-color: #333;
-line-height: 0.5;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    line-height: 0.5;
 }
 
 header {
-background: #ffffff;
-padding: 1rem;
-color: #fff;
+    background: #ffffff;
+    padding: 1rem;
+    color: #fff;
 }
 
 header nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul {
-display: flex;
-list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 header nav ul li {
-margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 header nav ul li a {
-color: #000000;
-text-decoration: none;
-font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
+
 /* Styles the active link in the header */
+
 header nav ul li a.active {
-  font-weight: bold;
-  color: #333; /* Optional: change color to distinguish further */
-  border-bottom: 3px solid #333;
-  padding-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+    /* Optional: change color to distinguish further */
+    border-bottom: 3px solid #333;
+    padding-bottom: 1rem;
 }
 
 
 /* Hero Section */
+
 .hero {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
-  margin: 0;
-  background: url('Sana.mp4') no-repeat center center;
-  background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0;
+    background: url('Sana.mp4') no-repeat center center;
+    background-size: cover;
 }
 
 .hero video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Keeps video scaled within the hero section */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Keeps video scaled within the hero section */
 }
+
 
 /* Hero Content */
+
 .hero-content {
-  position: relative;
-  top: 25vh;
-  left: 5vw;
-  max-width: 90%;
-  color: #fff;
-  text-align: left;
-  transform: translateY(-50%);
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    max-width: 90%;
+    color: #fff;
+    text-align: left;
+    transform: translateY(-50%);
 }
 
+
 /* Font Sizes with Clamp */
+
 .hero-content h1 {
-  font-size: clamp(1.5rem, 4vw, 5rem); /* Scales with screen but caps size */
-  margin-bottom: 4rem;
-  margin-top: 3rem;
-  line-height: 2;
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    /* Scales with screen but caps size */
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    line-height: 2;
 }
 
 .hero-content p {
-  font-size: clamp(1rem, 1.5vw, 2rem); /* Scales text, limits large sizes */
-  margin-bottom: 2rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    /* Scales text, limits large sizes */
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .cta-button {
-  font-size: clamp(1rem, 1.2vw, 1.5rem); /* Limits max size for button text */
-  padding: 0.8rem 2.4rem;
-  background: #70A7E1;
-  color: #e6f7ff;
-  border-radius: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  transition: background 0.3s;
-  margin-top: 2rem;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    /* Limits max size for button text */
+    padding: 0.8rem 2.4rem;
+    background: #70A7E1;
+    color: #e6f7ff;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s;
+    margin-top: 2rem;
 }
 
 .cta-button:hover {
-  background: #a0d6ff;
+    background: #a0d6ff;
 }
+
 
 /* Adjustments for Smaller Screens */
+
 @media (max-width: 768px) {
-  .hero {
-    height: 60vh; /* Shorter hero for smaller screens */
-  }
-
-  .hero-content {
-    position: relative;
-    top: 20vh;
-    left: 5vh;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(0.7rem, 5vw, 1.5rem);
-    margin-bottom: 1rem;
-  }
-
-  .hero-content p {
-    font-size: clamp(0.5rem, 3vw, 1.0rem);
-    margin-bottom: 1rem;
-  }
-
-  .cta-button {
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-    padding: 0.4rem 0.8rem;
-    margin-top: 1rem; /* Increased top margin for better spacing on smaller screens */
-  }
+    .hero {
+        height: 60vh;
+        /* Shorter hero for smaller screens */
+    }
+    .hero-content {
+        position: relative;
+        top: 20vh;
+        left: 5vh;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: clamp(0.7rem, 5vw, 1.5rem);
+        margin-bottom: 1rem;
+    }
+    .hero-content p {
+        font-size: clamp(0.5rem, 3vw, 1.0rem);
+        margin-bottom: 1rem;
+    }
+    .cta-button {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+        padding: 0.4rem 0.8rem;
+        margin-top: 1rem;
+        /* Increased top margin for better spacing on smaller screens */
+    }
 }
 
-
 .portfolio {
-padding: 4rem 0;
-text-align: center;
+    padding: 5rem 0;
+    text-align: center;
 }
 
 .portfolio-gallery {
-display: flex;
-justify-content: center;
-gap: 2rem;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    /* Adjust gap for smaller spacing */
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
-position: flex;
-width: 1000px;
-max-width: 1000px;
-aspect-ratio: 16/9; /* Maintain a consistent aspect ratio */
-overflow: hidden;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Change to relative to enable positioning of child elements */
+    width: 1200px;
+    /* Increase width for larger display */
+    max-width: 100%;
+    /* Allow scaling based on container */
+    aspect-ratio: 16/9;
+    /* Maintain a consistent aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-item video {
-width: 100%;
-height: 100%;
-object-fit: flex;
+.portfolio-item video,
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures content fills container without distortion */
 }
 
 .portfolio-item-info {
-position: absolute;
-bottom: 0;
-background: rgba(0, 0, 0, 0.5);
-color: #fff;
-width: 100%;
-text-align: center;
-padding: 0.5rem 0;
-border-radius: 0 0 5px 5px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    /* Adjust padding for better fit */
+    border-radius: 0 0 5px 5px;
 }
 
 .contact {
-padding: 4rem 0;
-text-align: center;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .contact form {
-display: flex;
-flex-direction: column;
-gap: 1rem;
-max-width: 500px;
-margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
 }
 
 .contact form input,
 .contact form textarea {
-width: 100%;
-padding: 1rem;
-border: 1px solid #ccc;
-border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact form button {
-padding: 1rem;
-background: #1f7cff;
-color: #fff;
-border: none;
-border-radius: 5px;
+    padding: 1rem;
+    background: #1f7cff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
 footer {
-background: #0a0a0a;
-color: #fff;
-text-align: center;
-padding: 1rem;
+    background: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
-
-
 
 // <uniquifier> Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
-
 .nunito-<fontone> {
-font-family: "Nunito", sans-serif;
-font-optical-sizing: auto;
-font-weight: <300>;
-font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <300>;
+    font-style: normal;
 }
 
 .logo {
-display: flex;
-align-items: center; /* Aligns logo and text vertically */
+    display: flex;
+    align-items: center;
+    /* Aligns logo and text vertically */
 }
 
 .logo-image {
-width: 80px; /* Adjust the width to fit your design */
-height: auto; /* Ensures the aspect ratio is maintained */
-margin-right: 10px; /* Adds space between the logo and text */
+    width: 80px;
+    /* Adjust the width to fit your design */
+    height: auto;
+    /* Ensures the aspect ratio is maintained */
+    margin-right: 10px;
+    /* Adds space between the logo and text */
 }
 
 .logo span {
-font-family: 'Nunito', sans-serif; /* Applying the Gothic font if needed */
-font-size: 1.0rem;
-color: #333; /* Change to your desired color */
+    font-family: 'Nunito', sans-serif;
+    /* Applying the Gothic font if needed */
+    font-size: 1.0rem;
+    color: #333;
+    /* Change to your desired color */
 }
 
 .services {
-padding: 4rem 0;
-text-align: center;
-background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
 .services h2 {
-font-size: 1.3 rem;
-margin-bottom: 0.5rem;
-line-height: 1.2;
-color: #030170;
+    font-size: 1.3 rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: #030170;
 }
 
-
 .service-icon {
-width: 80px;
-height: auto;
-margin-bottom: 1rem;
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 
 /* Responsive adjustments for smaller screens */
+
 @media (max-width: 768px) {
-.service-item {
-flex: 1 1 100%; /* Service boxes take full width on smaller screens */
-padding: 1.5rem;
-}
+    .service-item {
+        flex: 1 1 100%;
+        /* Service boxes take full width on smaller screens */
+        padding: 1.5rem;
+    }
 }
 
+
 /* Services Page Styling */
+
 .services-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-margin-bottom: 1.5rem;
-color: #030170;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #030170;
 }
 
 .services-description {
-  font-size: 1rem;
-  line-height: 1.6; /* Ensures proper spacing between lines */
-  padding: 0 1rem; /* Adds padding to prevent text from touching the sides */
-  color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    /* Ensures proper spacing between lines */
+    padding: 0 1rem;
+    /* Adds padding to prevent text from touching the sides */
+    color: #333;
 }
 
 .service-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap: 2rem;
-max-width: 1200px;
-margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-detail {
-background: #ffffff;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 2rem;
-width: 300px;
-text-align: left;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 300px;
+    text-align: left;
 }
 
 .service-detail h3 {
-font-size: 1.5rem;
-color: #030170;
-margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #030170;
+    margin-bottom: 1rem;
 }
 
 .service-detail p {
-font-size: 1rem;
-line-height: 1.5;
-color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
 }
 
+
 /* Portfolio Page Styling */
+
 .portfolio-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .portfolio-page h2 {
-font-size: 2.5rem;
-margin-bottom: 2rem;
-color: #030170;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #030170;
 }
 
 .portfolio-section {
-margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 .portfolio-section h3 {
-font-size: 1.8rem;
-margin-bottom: 1rem;
-color: #030170;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #030170;
 }
 
 .carousel {
-display: flex;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-gap: 1rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
 }
 
 .carousel-item {
-flex: 0 0 auto;
-width: 300px;
-scroll-snap-align: start;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item img {
-width: 100%;
-border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
+
 /* Portfolio Page Styling */
+
 .portfolio-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .portfolio-page h2 {
-font-size: 2.5rem;
-margin-bottom: 1rem; /* Increased margin for more space below the heading */
-color: #030170;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* Increased margin for more space below the heading */
+    color: #030170;
 }
 
 .portfolio-section {
-margin: 3rem 0; /* Adds vertical spacing between portfolio sections */
+    margin: 3rem 0;
+    /* Adds vertical spacing between portfolio sections */
 }
 
 .portfolio-section h3 {
-font-size: 1.8rem;
-margin-bottom: 1rem;
-color: #030170;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #030170;
 }
 
 .carousel {
-display: flex;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-gap: 1rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-margin-bottom: 2rem;
-color: #030170;
-line-height: 1.2; /* Increase line height for better spacing */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #030170;
+    line-height: 1.2;
+    /* Increase line height for better spacing */
 }
 
 .service-detail h3 {
-font-size: 1.5rem;
-color: #030170;
-margin-bottom: 1rem;
-line-height: 1.3; /* Ensures no overlap if the header wraps */
+    font-size: 1.5rem;
+    color: #030170;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    /* Ensures no overlap if the header wraps */
 }
 
+
 /* Ensuring links are responsive and take full width */
+
 .service-link {
-text-decoration: none;
-color: inherit;
-width: 100%; /* Ensures each link fills the container */
-display: block; /* Makes the link a block element */
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    /* Ensures each link fills the container */
+    display: block;
+    /* Makes the link a block element */
 }
 
 .service-item {
-background: #ffffff;
-border-radius: 30px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 2rem;
-width: 100%; /* Full width within the container */
-max-width: 250px; /* Limits max width for each item */
-text-align: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-line-height: 1.4; /* Ensures clear spacing for wrapped lines */
-flex: 1 1 250 px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    /* Full width within the container */
+    max-width: 250px;
+    /* Limits max width for each item */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.4;
+    /* Ensures clear spacing for wrapped lines */
+    flex: 1 1 250 px;
 }
 
 .service-item h3 {
-font-size: 1.3rem;
-margin-bottom: 0.5rem;
-line-height: 1.2; /* Ensures no overlap if heading wraps */
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    /* Ensures no overlap if heading wraps */
 }
 
 .service-item p {
-font-size: 1rem;
-line-height: 1.5; /* Clear spacing for paragraph text */
-margin-bottom: 0; /* Prevents extra spacing */
+    font-size: 1rem;
+    line-height: 1.5;
+    /* Clear spacing for paragraph text */
+    margin-bottom: 0;
+    /* Prevents extra spacing */
 }
 
 .service-link:hover .service-item {
-transform: scale(1.02);
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .services {
-padding: 4rem 0;
-text-align: center;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .service-container {
-display: flex;
-justify-content: center;
-align-items: stretch;
-flex-wrap: wrap;
-gap: 2rem; /* Space between boxes */
-max-width: 1200px;
-margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* Space between boxes */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the container */
 }
 
 .service-link {
-text-decoration: none;
-color: inherit;
-flex: 1 1 250px; /* Makes each link take 250px min width and fill available space */
-max-width: 300px; /* Prevents excessive width on large screens */
+    text-decoration: none;
+    color: inherit;
+    flex: 1 1 250px;
+    /* Makes each link take 250px min width and fill available space */
+    max-width: 300px;
+    /* Prevents excessive width on large screens */
 }
 
 .service-item {
-background: #ffffff;
-border-radius: 30px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 2rem;
-text-align: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-line-height: 1.4;
-height: 100%; /* Ensures even height for all boxes */
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.4;
+    height: 100%;
+    /* Ensures even height for all boxes */
 }
 
 .service-item h3 {
-font-size: 1.3rem;
-margin-bottom: 0.5rem;
-line-height: 1.2;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .service-item p {
-font-size: 1rem;
-line-height: 1.5;
-margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 .service-link:hover .service-item {
-transform: scale(1.02);
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .services-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-margin-bottom: 2rem;
-color: #030170;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #030170;
 }
 
 .service-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap: 2rem;
-max-width: 1200px;
-margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-item {
-background: #ffffff;
-border-radius: 30px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 1.5rem;
-width: 400px;
-text-align: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-line-height: 1.4;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.4;
 }
 
 .service-item:hover {
-transform: scale(1.03);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-image {
-width: 100%;
-height: 160px;
-object-fit: cover; /* Ensures image/video fits nicely without distortion */
-border-radius: 20px;
-margin-bottom: 1rem;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    /* Ensures image/video fits nicely without distortion */
+    border-radius: 20px;
+    margin-bottom: 1rem;
 }
 
 .service-item h3 {
-font-size: 1.3rem;
-color: #030170;
-margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #030170;
+    margin-bottom: 0.5rem;
 }
 
 .service-item p {
-font-size: 1rem;
-color: #333;
-line-height: 1.5;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
 }
+
 
 /* Box Container */
+
 .box {
-width: 20%;
-max-width: 860px;
-aspect-ratio: 16 / 9;
-overflow: relative;
-border-radius: 20px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin: 1rem auto;
+    width: 20%;
+    max-width: 860px;
+    aspect-ratio: 16 / 9;
+    overflow: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
 }
 
+
 /* Image or Video Inside the Box */
+
 .box img,
 .box video {
-width: 20%;
-height: 100%;
-max-width: 20%; /* Ensures video or image does not exceed box size */
-max-height: 20%; /* Prevents the video from expanding beyond the box */
-object-fit: cover; /* Ensures the content fills the box without distortion */
-border-radius: inherit; /* Matches border radius of the box */
+    width: 20%;
+    height: 100%;
+    max-width: 20%;
+    /* Ensures video or image does not exceed box size */
+    max-height: 20%;
+    /* Prevents the video from expanding beyond the box */
+    object-fit: cover;
+    /* Ensures the content fills the box without distortion */
+    border-radius: inherit;
+    /* Matches border radius of the box */
 }
+
 
 /* Box Container */
+
 .box {
-width: 100%;
-max-width: 1920px; /* Optional: limits width on larger screens */
-aspect-ratio: 16 / 9; /* Maintains 16:9 aspect ratio for the box */
-overflow: hidden; /* Clips any content that exceeds the box dimensions */
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin: 1rem auto;
+    width: 100%;
+    max-width: 1920px;
+    /* Optional: limits width on larger screens */
+    aspect-ratio: 16 / 9;
+    /* Maintains 16:9 aspect ratio for the box */
+    overflow: hidden;
+    /* Clips any content that exceeds the box dimensions */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
 }
 
+
 /* Image or Video Inside the Box */
+
 .box img,
 .box video {
-width: 100%;
-height: 100%;
-object-fit: cover; /* Ensures video/image fills the box without distortion */
-max-width: 100%; /* Prevents video from exceeding the box width */
-max-height: 100%; /* Prevents video from exceeding the box height */
-border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures video/image fills the box without distortion */
+    max-width: 100%;
+    /* Prevents video from exceeding the box width */
+    max-height: 100%;
+    /* Prevents video from exceeding the box height */
+    border-radius: inherit;
 }
+
 
 /* Services Page Styling */
+
 .services-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-margin-bottom: 2rem;
-color: #030170;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #030170;
 }
+
 
 /* Service Container with Larger Box Size */
+
 .service-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap: 2rem;
-max-width: 1200px;
-margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 
 /* Box Styling with Increased Size */
+
 .box {
-width: 100%;
-max-width: 400px; /* Increases the box width */
-min-height: 400px; /* Sets a minimum height for the box */
-aspect-ratio: 16 / 9;
-overflow: hidden;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin: 1rem auto;
-padding: 1.5rem; /* Adds padding inside the box */
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+    width: 100%;
+    max-width: 400px;
+    /* Increases the box width */
+    min-height: 400px;
+    /* Sets a minimum height for the box */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    /* Adds padding inside the box */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 
 /* Image or Video Styling */
+
 .box img,
 .box video {
-width: 150%;
-height: auto;
-max-height: 300px;
-object-fit: cover;
-border-radius: 8px;
-margin-bottom: 1rem;
+    width: 150%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
+
 
 /* Title Styling */
+
 .box h3 {
-font-size: 1.5rem;
-color: #030170;
-margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #030170;
+    margin: 1rem 0 0.5rem;
 }
+
 
 /* Description Text Styling */
+
 .box p {
-font-size: 1rem;
-line-height: 1.5; /* Ensures proper spacing between lines */
-color: #333;
-margin: 0; /* Removes default margin to avoid overflow */
-flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* Ensures proper spacing between lines */
+    color: #333;
+    margin: 0;
+    /* Removes default margin to avoid overflow */
+    flex-grow: 1;
 }
 
+
 /* Contact Page Styling */
+
 .contact-page {
-padding-top: 1rem;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
+    padding-top: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-page h2 {
-font-size: 2.5rem;
-color: #030170;
-margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #030170;
+    margin-bottom: 3rem;
 }
+
 
 /* Base styling for paragraph on Contact page */
+
 .contact-page p {
-font-size: 1rem;
-line-height: 1.6; /* Increase line height for better readability */
-color: #333;
-margin-bottom: 3rem;
-padding: 0 1rem; /* Adds padding on the sides */
+    font-size: 1rem;
+    line-height: 1.6;
+    /* Increase line height for better readability */
+    color: #333;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    /* Adds padding on the sides */
 }
 
+
 /* Responsive adjustments for smaller screens */
+
 @media (max-width: 768px) {
-.contact-page p {
-font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
-line-height: 1.4; /* Maintain line height to prevent overlap */
-padding: 0 0.5rem; /* Reduce padding to fit the screen better */
-}
+    .contact-page p {
+        font-size: 0.9rem;
+        /* Slightly smaller font size for smaller screens */
+        line-height: 1.4;
+        /* Maintain line height to prevent overlap */
+        padding: 0 0.5rem;
+        /* Reduce padding to fit the screen better */
+    }
 }
 
 .contact-form {
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .contact-form label {
-font-size: 1rem;
-color: #333;
-text-align: left;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
-width: 100%;
-padding: 1rem;
-font-size: 1rem;
-border: 1px solid #ccc;
-border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact-form button {
-padding: 1rem;
-font-size: 1.2rem;
-color: #fff;
-background-color: #030170;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #030170;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-background-color: #050d89;
+    background-color: #050d89;
 }
 
+
 /* Ensures the entire box is clickable */
+
 .service-link {
-text-decoration: none;
-color: inherit;
-display: block;
-width: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
 }
 
 .box {
-background: #ffffff;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 2rem;
-text-align: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-line-height: 1.4;
-width: 100%;
-max-width: 400px; /* Controls the width to avoid overly long lines */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 400px;
+    /* Controls the width to avoid overly long lines */
 }
 
 .box:hover {
-transform: scale(1.03);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-image {
-width: 100%;
-height: auto;
-object-fit: cover;
-border-radius: 8px;
-margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .box h3 {
-font-size: 1.3rem;
-margin-bottom: 0.5rem;
-line-height: 1.3; /* Ensures spacing between lines in headings */
-word-wrap: break-word; /* Forces long words to break and wrap onto the next line */
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    /* Ensures spacing between lines in headings */
+    word-wrap: break-word;
+    /* Forces long words to break and wrap onto the next line */
 }
 
 .box p {
-font-size: 1rem;
-line-height: 1.5;
-margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
+
 /* Services Page Styling */
+
 .services-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-color: #030170;
-margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #030170;
+    margin-bottom: 2rem;
 }
 
+
 /* Headline Navigation for Services */
+
 .service-headlines {
-display: flex;
-justify-content: space-around;
-gap: 1rem;
-flex-wrap: wrap;
-margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .service-btn {
-font-size: 1.1rem;
-padding: 0.8rem 1.5rem;
-background-color: transparent;
-border: none;
-cursor: pointer;
-transition: color 0.3s, background-color 0.3s;
-color: #333;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    color: #333;
 }
 
 .service-btn.active {
-background-color: #030170;
-color: #ffffff;
-border-radius: 5px;
+    background-color: #030170;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
+
 /* Service Panel */
+
 .service-panel {
-display: none; /* All panels hidden by default */
-background-color: #f9f9f9;
-color: #333;
-padding: 2rem;
-border-radius: 10px;
-max-width: 800px;
-margin: 0 auto;
-transition: background-color 0.3s, transform 0.3s;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* All panels hidden by default */
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .active-panel {
-display: block;
-background-color: #f0f4fc; /* Distinct background color for selected panel */
-transform: scale(1.02); /* Slightly larger to highlight active panel */
+    display: block;
+    background-color: #f0f4fc;
+    /* Distinct background color for selected panel */
+    transform: scale(1.02);
+    /* Slightly larger to highlight active panel */
 }
 
 .service-panel h3 {
-font-size: 1.8rem;
-color: #030170;
-margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #030170;
+    margin-bottom: 1.5rem;
 }
 
 .service-panel p {
-font-size: 1rem;
-line-height: 1.6;
-margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
 }
 
 .contact-button {
-display: inline-block;
-margin-top: 1rem;
-padding: 1.0rem 1.2rem;
-background-color: #030170;
-color: white;
-text-decoration: none;
-border-radius: 7px;
-font-weight: bold;
-transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.0rem 1.2rem;
+    background-color: #030170;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .contact-button:hover {
-background-color: #050d89;
+    background-color: #050d89;
 }
+
 
 /* Service Example Styling */
+
 .service-example {
-width: 100%;
-max-width: 600px; /* Optional: limit max width for a cleaner look */
-margin-top: 1.5rem; /* Adds spacing above the example */
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    /* Optional: limit max width for a cleaner look */
+    margin-top: 1.5rem;
+    /* Adds spacing above the example */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Specific styling for video elements */
+
 .service-panel video.service-example {
-max-height: 300px; /* Limit video height for better display */
-object-fit: cover;
+    max-height: 300px;
+    /* Limit video height for better display */
+    object-fit: cover;
 }
+
 
 /* Service Panel */
+
 .service-panel {
-text-align: center; /* Centers text and elements inside the panel */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 2rem;
-background-color: #f9f9f9;
-color: #333;
-border-radius: 10px;
-max-width: 800px;
-margin: 0 auto;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Centers text and elements inside the panel */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Contact Button Centering */
+
 .contact-button-container {
-display: flex;
-justify-content: center;
-margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
+
 /* Contact Button Styling */
+
 .contact-button {
-display: inline-block;
-padding: 1.2rem 1.4rem;
-background-color: #030170;
-color: white;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
-transition: background-color 0.3s;
+    display: inline-block;
+    padding: 1.2rem 1.4rem;
+    background-color: #030170;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .contact-button:hover {
-background-color: #050d89;
+    background-color: #050d89;
 }
+
 
 /* Service Example Styling (Image/Video) */
+
 .service-example {
-width: 100%;
-max-width: 600px;
-margin-top: 1.5rem; /* Adds space above the example */
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1.5rem;
+    /* Adds space above the example */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Specific styling for video elements */
+
 .service-panel video.service-example {
-max-height: 300px; /* Limit video height for better display */
-object-fit: cover;
+    max-height: 300px;
+    /* Limit video height for better display */
+    object-fit: cover;
 }
 
+
 /* Service Panel */
+
 .service-panel {
-display: none; /* Hide all panels initially */
-text-align: center;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 2rem;
-background-color: #f9f9f9;
-color: #333;
-border-radius: 10px;
-max-width: 800px;
-margin: 0 auto;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Hide all panels initially */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .active-panel {
-display: block; /* Only the active panel is shown */
+    display: block;
+    /* Only the active panel is shown */
 }
 
+
 /* Services Page Styling */
+
 .services-page {
-padding-top: 1rem;
-text-align: center;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .services-page h2 {
-font-size: 2.5rem;
-color: #030170;
-margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #030170;
+    margin-bottom: 2rem;
 }
 
+
 /* Service Panel */
+
 .service-panel {
-display: none; /* Hide all panels initially */
-text-align: center;
-padding: 2rem;
-background-color: #f9f9f9;
-color: #333;
-border-radius: 10px;
-max-width: 800px;
-margin: 0 auto;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Hide all panels initially */
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .active-panel {
-display: block; /* Only the active panel is shown */
+    display: block;
+    /* Only the active panel is shown */
 }
 
+
 /* Headline Navigation */
+
 .service-headlines {
-display: flex;
-justify-content: space-around;
-margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .service-btn {
-padding: 1rem 1.5rem;
-cursor: pointer;
-transition: background-color 0.3s, color 0.3s;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .service-btn.active {
-background-color: #030170;
-color: #fff;
+    background-color: #030170;
+    color: #fff;
 }
 
+
 /* Contact Button */
+
 .contact-button {
-margin-top: 1.5rem;
-padding: 0.8rem 1.5rem;
-background-color: #030170;
-color: white;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #030170;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .contact-button:hover {
-background-color: #050d89;
+    background-color: #050d89;
 }
+
 
 /* Service Example (Image/Video) */
+
 .service-example {
-width: 100%;
-max-width: 600px;
-margin-top: 1.5rem;
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Responsive adjustments for screens 768px and smaller */
+
 @media (max-width: 768px) {
-
-/* Adjust general text size */
-body {
-font-size: 16px; /* Adjust as needed */
+    /* Adjust general text size */
+    body {
+        font-size: 16px;
+        /* Adjust as needed */
+    }
+    /* Headings */
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5em;
+        /* Smaller heading size */
+        line-height: 1.2;
+        /* Adds spacing to prevent overlap */
+    }
+    /* Adjust spacing for specific sections */
+    .services-page h2,
+    .portfolio-page h2 {
+        margin-top: 1rem;
+        /* Reduces space above headings */
+        font-size: 1.8rem;
+        /* Make headings smaller for mobile */
+    }
+    /* Layout adjustments for containers */
+    .service-headlines,
+    .portfolio-gallery {
+        flex-direction: row;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items on mobile */
+    }
+    /* Reduce padding and margins to fit better on mobile */
+    .service-btn,
+    .contact-button {
+        padding: 0.5rem 1rem;
+        /* Smaller button size */
+        font-size: 1rem;
+        /* Adjust font size in buttons */
+    }
+    /* Specific fixes for images and videos */
+    .service-example {
+        max-width: 100%;
+        /* Ensure images and videos don’t overflow */
+        height: auto;
+        /* Keeps aspect ratio */
+    }
 }
 
-/* Headings */
-h1, h2, h3 {
-font-size: 1.5em; /* Smaller heading size */
-line-height: 1.2; /* Adds spacing to prevent overlap */
-}
-
-/* Adjust spacing for specific sections */
-.services-page h2, .portfolio-page h2 {
-margin-top: 1rem; /* Reduces space above headings */
-font-size: 1.8rem; /* Make headings smaller for mobile */
-}
-
-/* Layout adjustments for containers */
-.service-headlines, .portfolio-gallery {
-flex-direction: row; /* Stack items vertically */
-align-items: center; /* Center items on mobile */
-}
-
-/* Reduce padding and margins to fit better on mobile */
-.service-btn, .contact-button {
-padding: 0.5rem 1rem; /* Smaller button size */
-font-size: 1rem; /* Adjust font size in buttons */
-}
-
-/* Specific fixes for images and videos */
-.service-example {
-max-width: 100%; /* Ensure images and videos don’t overflow */
-height: auto; /* Keeps aspect ratio */
-}
-}
 
 /* Responsive adjustments for screens 768px and smaller */
+
 @media (max-width: 768px) {
-.logo span {
-white-space: nowrap;
-font-size: 1rem;
+    .logo span {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
 }
-}
+
+
 /* General font size and spacing */
+
 body {
-font-size: 16px; /* Adjust base font size */
-margin: 0; /* Remove any default body margin */
-padding: 0;
+    font-size: 16px;
+    /* Adjust base font size */
+    margin: 0;
+    /* Remove any default body margin */
+    padding: 0;
 }
 
+
 /* Headings */
-h1, h2, h3 {
-font-size: 1.5em; /* Smaller heading size */
-line-height: 1.2; /* Adds spacing to prevent overlap */
+
+h1,
+h2,
+h3 {
+    font-size: 1.5em;
+    /* Smaller heading size */
+    line-height: 1.2;
+    /* Adds spacing to prevent overlap */
 }
+
 
 /* Page Headings (e.g., "Our Services", "Our Portfolio") */
-.services-page h2, .portfolio-page h2 {
-margin-top: 1rem; /* Adjust as needed */
-font-size: 1.8rem; /* Make headings smaller for mobile */
+
+.services-page h2,
+.portfolio-page h2 {
+    margin-top: 1rem;
+    /* Adjust as needed */
+    font-size: 1.8rem;
+    /* Make headings smaller for mobile */
 }
+
 
 /* Layout adjustments for containers */
-.service-headlines, .portfolio-gallery {
-flex-direction: row; /* Stack items vertically */
-align-items: center; /* Center items on mobile */
+
+.service-headlines,
+.portfolio-gallery {
+    flex-direction: row;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items on mobile */
 }
+
 
 /* Button adjustments */
-.service-btn, .contact-button {
-padding: 0.5rem 1rem;
-font-size: 1rem;
+
+.service-btn,
+.contact-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 
+
 /* Image and video adjustments */
-.service-example, .portfolio-item img {
-max-width: 100%; /* Ensure images and videos don’t overflow */
-height: auto; /* Keep aspect ratio */
+
+.service-example,
+.portfolio-item img {
+    max-width: 100%;
+    /* Ensure images and videos don’t overflow */
+    height: auto;
+    /* Keep aspect ratio */
 }
+
+
 }
 
 /* About Us Section */
 .about-us {
-  padding: 4rem 1rem;
-  background-color: #f7f7f7; /* Optional background color for distinction */
-  text-align: center;
+    padding: 4rem 1rem;
+    background-color: #f7f7f7;
+    /* Optional background color for distinction */
+    
+    text-align: center;
 }
-
 .about-us h2 {
-  font-size: 2.5rem;
-  color: #030170;
-  margin-bottom: 2rem;
-  text-align: center; /* Ensures the heading is centered */
+    font-size: 2.5rem;
+    color: #030170;
+    margin-bottom: 2rem;
+    text-align: center;
+    /* Ensures the heading is centered */
 }
-
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Centers items vertically if needed */
-  gap: 4rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto; /* Centers the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centers items vertically if needed */
+    
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the container */
 }
-
 .about-us p {
-  max-width: 800px; /* Limits width for readability */
-  margin: 0 auto; /* Centers the paragraph */
-  font-size: 1.2rem;
-  line-height: 1.8; /* Adjusted line height for better spacing */
-  padding: 0 1rem; /* Adds padding for extra space */
-  color: #333;
+    max-width: 800px;
+    /* Limits width for readability */
+    
+    margin: 0 auto;
+    /* Centers the paragraph */
+    
+    font-size: 1.2rem;
+    line-height: 1.8;
+    /* Adjusted line height for better spacing */
+    
+    padding: 0 1rem;
+    /* Adds padding for extra space */
+    
+    color: #333;
 }
-
 .profile {
-  flex: 1 1 300px;
-  max-width: 300px;
-  text-align: center;
-  padding: 1rem;
-  margin: 0 auto; /* Centers individual profiles */
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    /* Centers individual profiles */
 }
-
 .profile-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover;
-  margin-bottom: 1rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* Makes the image circular */
+    
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
-
 .profile h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
 }
-
 .profile p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-  margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0.2rem 0;
 }

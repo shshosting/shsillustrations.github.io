@@ -194,6 +194,11 @@ header nav ul li a.active {
     transform: scale(1.05);
 }
 
+.portfolio-item:hover img,
+.portfolio-item:hover video {
+    transform: scale(1.1);
+}
+
 .portfolio-item-info {
     position: absolute;
     bottom: 0;

@@ -1429,3 +1429,51 @@ h3 {
     margin-bottom: 20px;
 }
 
+/* Portfolio Gallery Styling */
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Portfolio Item Styling */
+.portfolio-item {
+  position: relative;
+  width: 300px; /* Default width */
+  height: 200px; /* Default height */
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect to Enlarge */
+.portfolio-item:hover {
+  transform: scale(1.1); /* Slightly enlarge the item */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  z-index: 2; /* Ensures it appears above other elements */
+}
+
+/* Overlay Styling */
+.portfolio-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Transparent overlay */
+  color: #fff;
+  opacity: 0; /* Hidden by default */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Show Overlay on Hover */
+.portfolio-item:hover .portfolio-item-overlay {
+  opacity: 1;
+}
+

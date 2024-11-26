@@ -489,10 +489,10 @@ footer {
 .linkedin-section .carousel-item img {
     margin: 0 0 auto;
     flex: 0 0 auto; 
-    width: 130%;
+    width: 150%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
-    gap: 30rem;
+    gap: 60rem;
 }
 
 .carousel-item {

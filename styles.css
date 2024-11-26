@@ -489,7 +489,7 @@ footer {
 .linkedin-section .carousel-item img {
     margin: 0 0 auto;
     flex: 0 0 auto; 
-    width: 200%;
+    width: 100%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
     gap: 2rem;

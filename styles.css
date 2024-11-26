@@ -492,6 +492,7 @@ footer {
     width: 200%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
+    gap: 2rem;
 }
 
 .carousel-item {

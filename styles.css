@@ -466,6 +466,29 @@ footer {
     color: #030170;
 }
 
+
+/* Animations Section */
+.animations-section .carousel-item img {
+    width: 150%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+/* Figures Section */
+.figures-section .carousel-item img {
+    width: 1500%; /* Adjust for smaller size */
+    margin: 0 auto; /* Center images */
+    border-radius: 10px; /* Optional */
+}
+
+/* LinkedIn Headers Section */
+.linkedin-section .carousel-item img {
+    width: 300%;
+    max-height: 300px;
+    object-fit: cover; /* Ensures images don't stretch */
+    margin: 0 auto; /* Center images */
+}
+
 .carousel {
     display: flex;
     overflow-x: auto;

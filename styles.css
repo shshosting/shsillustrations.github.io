@@ -474,8 +474,7 @@ footer {
     width: 100%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     transform: scale(1.1); /* Slightly enlarge */
-    border-radius: 10px;
-    gap: 2rem;
+    border-radius: 6px;
 }
 
 /* Figures Section */
@@ -493,7 +492,7 @@ footer {
     width: 130%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
-    gap: 10rem;
+    gap: 30rem;
 }
 
 .carousel-item {

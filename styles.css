@@ -474,7 +474,8 @@ footer {
     width: 100%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     transform: scale(1.1); /* Slightly enlarge */
-    border-radius: 6px;
+    border-radius: 10px;
+    gap: 2rem;
 }
 
 /* Figures Section */
@@ -489,10 +490,10 @@ footer {
 .linkedin-section .carousel-item img {
     margin: 0 0 auto;
     flex: 0 0 auto; 
-    width: 100%;
+    width: 130%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .carousel-item {

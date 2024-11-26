@@ -474,14 +474,15 @@ footer {
     width: 100%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     transform: scale(1.1); /* Slightly enlarge */
+    border-radius: 6px;
 }
 
 /* Figures Section */
 .figures-section .carousel-item img {
     flex: 0 0 auto; 
     width: 100%; /* Adjust for smaller size */
-    margin: 0 auto; /* Center images */
-    border-radius: 10px; /* Optional */
+    margin: 0 0 auto; /* Center images */
+    border-radius: 6px; /* Optional */
 }
 
 /* LinkedIn Headers Section */
@@ -491,12 +492,12 @@ footer {
     width: 200%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */
-    margin: 0 auto; /* Center images */
 }
 
 .carousel-item {
     margin: 0 0.5rem;
     flex: 0 0 auto;
+    gap: 1rem;
 }
 
 .carousel {

@@ -469,7 +469,7 @@ footer {
 
 /* Animations Section */
 .animations-section .carousel-item img {
-    width: 50%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     transform: scale(1.1); /* Slightly enlarge */
 }
@@ -483,6 +483,7 @@ footer {
 
 /* LinkedIn Headers Section */
 .linkedin-section .carousel-item img {
+    gap: 1rem;
     width: 200%;
     max-height: 300px;
     object-fit: cover; /* Ensures images don't stretch */

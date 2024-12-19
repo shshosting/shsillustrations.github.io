@@ -126,5 +126,15 @@
   <footer>
     <p>&copy; 2024 SHS Illustrations. All rights reserved.</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const video = document.getElementById('hero-video');
+      video.addEventListener('webkitfullscreenchange', (event) => {
+        if (document.fullscreenElement) {
+          document.exitFullscreen(); // Exit fullscreen if triggered
+        }
+      });
+    });
+  </script>
 </body>
 </html>

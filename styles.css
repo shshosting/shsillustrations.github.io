@@ -1110,7 +1110,7 @@ footer {
 /* Service Panel */
 
 .service-panel {
-    padding: 4rem 0;
+    padding: 2rem;
     display: none;
     /* All panels hidden by default */
     background-color: #f9f9f9;

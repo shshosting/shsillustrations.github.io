@@ -1662,3 +1662,10 @@ footer .social-links a img {
 footer .social-links a img:hover {
     transform: scale(1.2); /* Slightly enlarge on hover */
 }
+
+@media (max-width: 768px) {
+    footer .social-links a img {
+        width: 30px; /* Smaller icons for mobile */
+        height: 30px;
+    }
+}

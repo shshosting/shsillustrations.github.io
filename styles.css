@@ -1676,6 +1676,7 @@ footer .social-links a img:hover {
 
 /* Partnerships Section */
 .partnerships {
+    padding-top: 5rem;
     padding: 2rem;
     text-align: center;
     background-color: #f9f9f9;

@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- Navigation -->
     <header>
         <nav>
@@ -31,48 +30,45 @@
     </header>
 
     <!-- Portfolio Section -->
-<section class="portfolio-page">
+    <section class="portfolio-page">
+        <h1>Our Portfolio</h1>
+        <div class="masonry">
+            <!-- Animations Section -->
+            <div class="masonry-item">
+                <video src="Sana.mp4" controls></video>
+            </div>
+            <div class="masonry-item">
+                <video src="PRPH2_compltete_intro0001-0499.mp4" controls></video>
+            </div>
+            <div class="masonry-item">
+                <video src="Karlanimation.mp4" controls></video>
+            </div>
+            <div class="masonry-item">
+                <video src="tessagithub.mp4" controls></video>
+            </div>
+            <div class="masonry-item">
+                <video src="slidedesign.mov" controls></video>
+            </div>
+            <div class="masonry-item">
+                <video src="sanatext.mp4" controls></video>
+            </div>
 
-    <!-- 3D Animations Carousel -->
-    <div class="portfolio-section animations-section">
-        <h3>Animations</h3>
-        <div class="carousel">
-            <div class="carousel-item"><img src="Sana.mp4" alt="Animation 1"></div>
-            <div class="carousel-item"><img src="PRPH2 compltete intro0001-0499.mp4" alt="Animation 2"></div>
-            <div class="carousel-item"><img src="Karlanimation.mp4" alt="Animation 3"></div>
-            <div class="carousel-item"><img src="tessagithub.mp4" alt="Animation 4"></div>
-            <div class="carousel-item"><img src="slidedesign.mov" alt="Animation 5"></div>
-            <div class="carousel-item"><img src="sanatext.mp4" alt="Animation 6"></div>
+            <!-- Figures Section -->
+            <div class="masonry-item"><img src="abe.png" alt="Cover 1"></div>
+            <div class="masonry-item"><img src="cover.png" alt="Cover 2"></div>
+            <div class="masonry-item"><img src="cellcycle.jpg" alt="Cover 3"></div>
+            <div class="masonry-item"><img src="styles2.png" alt="Cover 4"></div>
+            <div class="masonry-item"><img src="NSERC Photoreceptor.png" alt="Cover 5"></div>
+            <div class="masonry-item"><img src="Cellmodel.png" alt="Cover 6"></div>
+            <div class="masonry-item"><img src="annewgledisc.png" alt="Cover 7"></div>
+            <div class="masonry-item"><img src="LNPBfinal.png" alt="Cover 8"></div>
+            <div class="masonry-item"><img src="ELI4.png" alt="Cover 9"></div>
+            <div class="masonry-item"><img src="LinkedIn CRISPR9.png" alt="Cover 10"></div>
         </div>
-    </div>
-
-    <!-- Scientific Journal Covers Carousel -->
-    <div class="portfolio-section figures-section">
-        <h3>Figures</h3>
-        <div class="carousel">
-            <div class="carousel-item"><img src="abe.png" alt="Cover 1"></div>
-            <div class="carousel-item"><img src="cover.png" alt="Cover 2"></div>
-            <div class="carousel-item"><img src="cellcycle.jpg" alt="Cover 3"></div>
-            <div class="carousel-item"><img src="styles2.png" alt="Cover 4"></div>
-            <div class="carousel-item"><img src="NSERC Photoreceptor.png" alt="Cover 5"></div>
-            <div class="carousel-item"><img src="Cellmodel.png" alt="Cover 6"></div>
-            <div class="carousel-item"><img src="annewgledisc.png" alt="Cover 7"></div>
-            <div class="carousel-item"><img src="LNPBfinal.png" alt="Cover 8"></div>
-        </div>
-    </div>
-
-    <!-- LinkedIn Headers Carousel -->
-    <div class="portfolio-section linkedin-section">
-        <h3>LinkedIn Headers</h3>
-        <div class="carousel">
-            <div class="carousel-item"><img src="ELI4.png" alt="Cover 9"></div>
-            <div class="carousel-item"><img src="LinkedIn CRISPR9.png" alt="Cover 10"></div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const currentPath = window.location.pathname;
             const navLinks = document.querySelectorAll("header nav ul li a");
 
@@ -83,7 +79,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>

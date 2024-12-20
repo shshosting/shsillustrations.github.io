@@ -1645,27 +1645,31 @@ footer {
 
 /* Style for the social links container */
 footer .social-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center; /* Center the icons in the footer */
-    gap: 1rem; /* Space between icons */
+    gap: 2rem; /* Space between icons */
 }
 
 /* Style for the icons */
 footer .social-links a img {
-    width: 40px; /* Set icon size */
-    height: 40px;
+    width: 35px; /* Set icon size */
+    height: 35px;
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 /* Hover effect */
 footer .social-links a img:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 @media (max-width: 768px) {
     footer .social-links a img {
-        width: 30px; /* Smaller icons for mobile */
-        height: 30px;
+        width: 25px; /* Smaller icons for mobile */
+        height:250px;
+    }
+
+    footer .social-links {
+        gap: 1rem; /* Slightly reduced spacing for smaller screens */
     }
 }

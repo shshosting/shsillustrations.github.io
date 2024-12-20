@@ -1637,3 +1637,9 @@ h3 {
   height: 100%;
 }
 
+footer {
+    margin-top: 2rem; /* Adds space above the footer */
+    background-color: #f4f4f4; /* Optional: Footer background color */
+    padding: 1rem; /* Optional: Adds padding inside the footer for aesthetics */
+    text-align: center; /* Centers the text in the footer */
+}

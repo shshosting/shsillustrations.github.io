@@ -1648,7 +1648,7 @@ footer .social-links {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center; /* Center the icons in the footer */
-    gap: 2rem; /* Space between icons */
+    gap: 4rem; /* Space between icons */
 }
 
 /* Style for the icons */
@@ -1666,7 +1666,7 @@ footer .social-links a img:hover {
 @media (max-width: 768px) {
     footer .social-links a img {
         width: 25px; /* Smaller icons for mobile */
-        height:250px;
+        height: 25px;
     }
 
     footer .social-links {

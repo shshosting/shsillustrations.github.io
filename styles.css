@@ -1682,6 +1682,7 @@ footer .social-links a img:hover {
 }
 
 .partnerships-description {
+    line-height: 1.6;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     color: #555;
@@ -1731,12 +1732,14 @@ footer .social-links a img:hover {
 .testimonial p {
     font-style: italic;
     color: #555;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
 .testimonial h4 {
     font-weight: bold;
     color: #333;
-}
+    line-height: 1.4; /* Prevents text overlap for names */
+    margin-top: 0.5rem;
 }
 

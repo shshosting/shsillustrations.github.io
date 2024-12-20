@@ -47,7 +47,7 @@ header nav ul li a.active {
     color: #333;
     /* Optional: change color to distinguish further */
     border-bottom: 3px solid #333;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 /* Header Styles */
@@ -73,7 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 0;
 }
 
 nav ul {

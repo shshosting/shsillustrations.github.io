@@ -499,6 +499,14 @@ footer {
     color: #333;
 }
 
+.portfolio-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #030170;
+    line-height: 1.2;
+    /* Increase line height for better spacing */
+}
+
 /* Masonry Layout */
 .masonry {
     column-count: 3; /* Number of columns */
@@ -1366,9 +1374,10 @@ footer {
     /* Adjust spacing for specific sections */
     .services-page h2,
     .portfolio-page h2 {
-        margin-top: 1rem;
+
+        margin-top: 2.5rem;
         /* Reduces space above headings */
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         /* Make headings smaller for mobile */
     }
     /* Layout adjustments for containers */
@@ -1436,7 +1445,7 @@ h3 {
 .portfolio-page h2 {
     margin-top: 1rem;
     /* Adjust as needed */
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     /* Make headings smaller for mobile */
 }
 

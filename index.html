@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- Navigation -->
-<header>
+<header id ="main-header">
   <nav>
     <div class="logo">
       <a href="index.html">
@@ -140,5 +140,19 @@
       });
     });
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.getElementById("main-header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+});
+</script>
+  
 </body>
 </html>

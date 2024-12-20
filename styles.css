@@ -401,13 +401,13 @@ footer {
 /* Services Page Styling */
 
 .services-page {
-    padding-top: 1rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
 .services-page h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
     color: #030170;
 }
 
@@ -415,7 +415,7 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
     /* Ensures proper spacing between lines */
-    padding: 0 1rem;
+    padding: 4rem;
     /* Adds padding to prevent text from touching the sides */
     color: #333;
 }
@@ -615,7 +615,7 @@ footer {
 
 .services-page h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: #030170;
     line-height: 1.2;
     /* Increase line height for better spacing */
@@ -733,7 +733,7 @@ footer {
 }
 
 .services-page {
-    padding-top: 3rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
@@ -855,7 +855,7 @@ footer {
 /* Services Page Styling */
 
 .services-page {
-    padding-top: 3rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
@@ -1069,14 +1069,14 @@ footer {
 /* Services Page Styling */
 
 .services-page {
-    padding-top: 1rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
 .services-page h2 {
     font-size: 2.5rem;
     color: #030170;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -1275,14 +1275,14 @@ footer {
 /* Services Page Styling */
 
 .services-page {
-    padding-top: 1rem;
+    padding-top:41rem;
     text-align: center;
 }
 
 .services-page h2 {
     font-size: 2.5rem;
     color: #030170;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -1638,7 +1638,7 @@ h3 {
 
 footer {
     margin-top: 2rem; /* Adds space above the footer */
-    background-color: ##c0c1c2; /* Optional: Footer background color */
+    background-color: #c0c1c2; /* Optional: Footer background color */
     padding: 1rem; /* Optional: Adds padding inside the footer for aesthetics */
     text-align: center; /* Centers the text in the footer */
 }

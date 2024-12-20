@@ -1110,11 +1110,11 @@ footer {
 /* Service Panel */
 
 .service-panel {
+    padding: 4rem 0;
     display: none;
     /* All panels hidden by default */
     background-color: #f9f9f9;
     color: #333;
-    padding: 2rem;
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
@@ -1123,6 +1123,7 @@ footer {
 }
 
 .active-panel {
+    padding: 4rem 0;
     display: block;
     background-color: #f0f4fc;
     /* Distinct background color for selected panel */
@@ -1250,13 +1251,13 @@ footer {
 /* Service Panel */
 
 .service-panel {
+    padding: 2rem;
     display: none;
     /* Hide all panels initially */
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2rem;
     background-color: #f9f9f9;
     color: #333;
     border-radius: 10px;
@@ -1266,6 +1267,7 @@ footer {
 }
 
 .active-panel {
+    padding: 4rem 0;
     display: block;
     /* Only the active panel is shown */
 }
@@ -1301,6 +1303,7 @@ footer {
 }
 
 .active-panel {
+    padding: 4rem 0;
     display: block;
     /* Only the active panel is shown */
 }

@@ -111,7 +111,16 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
-
+  
+ document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('hero-video');
+  if (video) {
+    video.muted = true; // Ensure video is muted
+    video.play().catch((error) => {
+      console.error('Autoplay failed:', error);
+    });
+  }
+});
 
   <!-- Footer -->
   <footer>

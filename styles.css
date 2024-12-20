@@ -1123,7 +1123,7 @@ footer {
 }
 
 .active-panel {
-    padding: 4rem 0;
+    padding: 2rem;
     display: block;
     background-color: #f0f4fc;
     /* Distinct background color for selected panel */
@@ -1267,7 +1267,6 @@ footer {
 }
 
 .active-panel {
-    padding: 4rem 0;
     display: block;
     /* Only the active panel is shown */
 }

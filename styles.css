@@ -1642,3 +1642,23 @@ footer {
     padding: 1rem; /* Optional: Adds padding inside the footer for aesthetics */
     text-align: center; /* Centers the text in the footer */
 }
+
+/* Style for the social links container */
+footer .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* Center the icons in the footer */
+    gap: 1rem; /* Space between icons */
+}
+
+/* Style for the icons */
+footer .social-links a img {
+    width: 40px; /* Set icon size */
+    height: 40px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+footer .social-links a img:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}

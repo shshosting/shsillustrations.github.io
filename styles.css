@@ -50,6 +50,58 @@ header nav ul li a.active {
     padding-bottom: 1rem;
 }
 
+/* Header Styles */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); /* Initial semi-transparent background */
+    backdrop-filter: blur(10px); /* Adds a subtle blur effect */
+    transition: background-color 0.3s ease; /* Smooth transition for opacity changes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for better separation */
+}
+
+#main-header.scrolled {
+    background-color: rgba(255, 255, 255, 0.5); /* More translucent background on scroll */
+    backdrop-filter: blur(5px); /* Optional: reduce blur on scroll */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Logo Styles */
+.logo-image {
+    max-height: 50px; /* Adjust logo size */
+}
+
 
 /* Hero Section */
 

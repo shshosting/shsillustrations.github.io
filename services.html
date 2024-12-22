@@ -162,11 +162,6 @@
                 nameAndTitle.textContent = `- ${entry.name}${entry.title ? `, ${entry.title}` : ''}`; // Add title only if it exists
                 testimonialDiv.appendChild(nameAndTitle);
 
-                // Add Testimonial
-                const feedback = document.createElement('p');
-                feedback.textContent = entry.testimonial;
-                testimonialDiv.appendChild(feedback);
-
                 testimonialsContainer.appendChild(testimonialDiv);
             });
         } catch (error) {

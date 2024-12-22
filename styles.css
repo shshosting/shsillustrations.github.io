@@ -34,9 +34,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #adadad;
+    color: #8f8f8f;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 
@@ -89,7 +89,7 @@ nav ul li a {
     color: #a7a6ff;
     padding: 0.5rem 0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     transition: color 0.3s ease;
 }

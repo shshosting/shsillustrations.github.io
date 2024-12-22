@@ -938,9 +938,10 @@ footer {
 /* Contact Page Styling */
 
 .contact-page {
-    padding-top: 5rem;
+    padding-top: 0rem;
     text-align: center;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-page h2 {

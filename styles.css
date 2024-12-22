@@ -976,7 +976,7 @@ footer {
         /* Slightly smaller font size for smaller screens */
         line-height: 1.4;
         /* Maintain line height to prevent overlap */
-        padding: 0 0.5rem;
+        padding: 0 1rem;
         /* Reduce padding to fit the screen better */
     }
 }
@@ -1365,6 +1365,7 @@ footer {
 @media (max-width: 768px) {
     /* Adjust general text size */
     body {
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
         font-size: 16px;
         /* Adjust as needed */
     }
@@ -1754,5 +1755,6 @@ footer .social-links a img:hover {
     color: #333;
     line-height: 1.4; /* Prevents text overlap for names */
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 

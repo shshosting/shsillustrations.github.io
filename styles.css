@@ -945,9 +945,9 @@ footer {
 }
 
 .contact-page h2 {
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #030170;
-    margin-bottom: 3rem;
+    color: #333;
 }
 
 
@@ -1680,6 +1680,12 @@ footer .social-links a img:hover {
     padding-top: 5rem;
     text-align: center;
     background-color: #f9f9f9;
+}
+
+.partnerships h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .partnerships-description {

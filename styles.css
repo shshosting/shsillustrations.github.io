@@ -30,13 +30,13 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 0.5rem;
+    margin: 0 0.7rem;
 }
 
 header nav ul li a {
     color: #8f8f8f;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -87,9 +87,9 @@ nav ul li {
 
 nav ul li a {
     color: #a7a6ff;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     transition: color 0.3s ease;
 }
@@ -352,7 +352,7 @@ footer {
 }
 
 .logo-image {
-    width: 200px;
+    width: 150px;
     /* Adjust the width to fit your design */
     height: auto;
     /* Ensures the aspect ratio is maintained */
@@ -1732,7 +1732,7 @@ footer .social-links a img:hover {
 }
 
 .testimonial {
-    background-color: #c2ddff;
+    background-color: #e8f2ff;
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

@@ -352,7 +352,7 @@ footer {
 }
 
 .logo-image {
-    width: 80px;
+    width: 60px;
     /* Adjust the width to fit your design */
     height: auto;
     /* Ensures the aspect ratio is maintained */
@@ -512,6 +512,7 @@ footer {
 .masonry {
     column-count: 3; /* Number of columns */
     column-gap: 1rem; /* Space between columns */
+    padding: 0 1rem; /* Adds 1rem gap on left and right */
 }
 
 .masonry-item {
@@ -552,12 +553,14 @@ footer {
 @media (max-width: 768px) {
     .masonry {
         column-count: 2; /* Fewer columns on smaller screens */
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
     }
 }
 
 @media (max-width: 480px) {
     .masonry {
         column-count: 1; /* Single column on very small screens */
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
     }
 }
 

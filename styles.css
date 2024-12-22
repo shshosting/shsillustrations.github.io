@@ -34,9 +34,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #000000;
+    color: #adadad;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -86,16 +86,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #a7a6ff;
     padding: 0.5rem 0;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #002642;
 }
 
 /* Logo Styles */

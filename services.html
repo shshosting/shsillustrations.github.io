@@ -137,6 +137,49 @@
 });
 </script>
 
+    <script>
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbyGleNRdc4fBJUONRSzmOpdRJNslhfTnpwv42YwU5mAyl1rVRDmi7_K00p_tGbvgDu-ZQ/exec'; // Replace with your Google Apps Script URL
+
+    async function fetchTestimonials() {
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+
+            const testimonialsContainer = document.getElementById('testimonials-container');
+            testimonialsContainer.innerHTML = ''; // Clear any existing content
+
+            data.forEach(entry => {
+                const testimonialDiv = document.createElement('div');
+                testimonialDiv.className = 'testimonial';
+
+                // Add Name (if available)
+                if (entry.name) {
+                    const name = document.createElement('h4');
+                    name.textContent = entry.name;
+                    testimonialDiv.appendChild(name);
+                }
+
+                // Add Professional Title
+                const title = document.createElement('h4');
+                title.textContent = entry.title;
+                testimonialDiv.appendChild(title);
+
+                // Add Testimonial
+                const feedback = document.createElement('p');
+                feedback.textContent = entry.testimonial;
+                testimonialDiv.appendChild(feedback);
+
+                testimonialsContainer.appendChild(testimonialDiv);
+            });
+        } catch (error) {
+            console.error('Error fetching testimonials:', error);
+        }
+    }
+
+    // Call the function when the page loads
+    document.addEventListener('DOMContentLoaded', fetchTestimonials);
+</script>
+
 </body>
 
 </html>

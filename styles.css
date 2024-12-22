@@ -100,7 +100,7 @@ nav ul li a:hover {
 
 /* Logo Styles */
 .logo-image {
-    max-height: 100px; /* Adjust logo size */
+    max-height: 80px; /* Adjust logo size */
 }
 
 
@@ -1718,7 +1718,7 @@ footer .social-links a img:hover {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     background-color: #fff;
 }

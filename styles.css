@@ -300,7 +300,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
@@ -1637,7 +1637,7 @@ h3 {
 }
 
 footer {
-    margin-top: 2rem; /* Adds space above the footer */
+    margin-top: 1rem; /* Adds space above the footer */
     background-color: #ffffff; /* Optional: Footer background color */
     padding: 1rem; /* Optional: Adds padding inside the footer for aesthetics */
     text-align: center; /* Centers the text in the footer */
@@ -1645,7 +1645,7 @@ footer {
 
 /* Style for the social links container */
 footer .social-links {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center; /* Center the icons in the footer */
     gap: 4rem; /* Space between icons */
@@ -1660,7 +1660,7 @@ footer .social-links a img {
 
 /* Hover effect */
 footer .social-links a img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
 }
 
 @media (max-width: 768px) {

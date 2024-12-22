@@ -152,23 +152,20 @@
                 const testimonialDiv = document.createElement('div');
                 testimonialDiv.className = 'testimonial';
 
-                 // Add Testimonial
+                // Add Testimonial
                 const feedback = document.createElement('p');
                 feedback.textContent = entry.testimonial;
                 testimonialDiv.appendChild(feedback);
 
-                // Add Name (if available)
-                if (entry.name) {
-                    const name = document.createElement('h4');
-                    name.textContent = entry.name;
-                    testimonialDiv.appendChild(name);
-                }
+                // Add Name and Professional Title in the same <h4> element
+                const nameAndTitle = document.createElement('h4');
+                nameAndTitle.textContent = `- ${entry.name}${entry.title ? `, ${entry.title}` : ''}`; // Add title only if it exists
+                testimonialDiv.appendChild(nameAndTitle);
 
-                // Add Professional Title
-                const title = document.createElement('h4');
-                title.textContent = entry.title;
-                testimonialDiv.appendChild(title);
-
+                // Add Testimonial
+                const feedback = document.createElement('p');
+                feedback.textContent = entry.testimonial;
+                testimonialDiv.appendChild(feedback);
 
                 testimonialsContainer.appendChild(testimonialDiv);
             });

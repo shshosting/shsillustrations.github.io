@@ -152,6 +152,11 @@
                 const testimonialDiv = document.createElement('div');
                 testimonialDiv.className = 'testimonial';
 
+                 // Add Testimonial
+                const feedback = document.createElement('p');
+                feedback.textContent = entry.testimonial;
+                testimonialDiv.appendChild(feedback);
+
                 // Add Name (if available)
                 if (entry.name) {
                     const name = document.createElement('h4');
@@ -164,10 +169,6 @@
                 title.textContent = entry.title;
                 testimonialDiv.appendChild(title);
 
-                // Add Testimonial
-                const feedback = document.createElement('p');
-                feedback.textContent = entry.testimonial;
-                testimonialDiv.appendChild(feedback);
 
                 testimonialsContainer.appendChild(testimonialDiv);
             });

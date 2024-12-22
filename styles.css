@@ -352,7 +352,7 @@ footer {
 }
 
 .logo-image {
-    width: 60px;
+    width: 80px;
     /* Adjust the width to fit your design */
     height: auto;
     /* Ensures the aspect ratio is maintained */
@@ -1733,6 +1733,7 @@ footer .social-links a img:hover {
     gap: 2rem;
     justify-items: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .testimonial {

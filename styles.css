@@ -394,7 +394,8 @@ footer {
     .service-item {
         flex: 1 1 100%;
         /* Service boxes take full width on smaller screens */
-        padding: 1.5rem;
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+        
     }
 }
 
@@ -977,6 +978,7 @@ footer {
         line-height: 1.4;
         /* Maintain line height to prevent overlap */
         padding: 0 1rem;
+        
         /* Reduce padding to fit the screen better */
     }
 }

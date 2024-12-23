@@ -983,6 +983,10 @@ footer {
     }
 }
 
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1503,7 +1507,7 @@ h3 {
 .about-us h2 {
     font-size: 2.5rem;
     color: #030170;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     /* Ensures the heading is centered */
 }
@@ -1513,7 +1517,7 @@ h3 {
     align-items: center;
     /* Centers items vertically if needed */
     
-    gap: 4rem;
+    gap: 3rem;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -1530,7 +1534,7 @@ h3 {
     line-height: 1.8;
     /* Adjusted line height for better spacing */
     
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     /* Adds padding for extra space */
     
     color: #333;

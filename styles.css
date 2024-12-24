@@ -300,9 +300,15 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 1.5rem 0;
+    padding: 0 2rem;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     background-color: #f9f9f9;
+}
+
+.contact h2 {
+    margin-top: 2rem;
 }
 
 .contact form {
@@ -316,6 +322,7 @@ nav ul li a:hover {
 .contact form textarea {
     width: 100%;
     padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -326,6 +333,8 @@ nav ul li a:hover {
     color: #fff;
     border: none;
     border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -1006,6 +1015,7 @@ footer {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -1013,6 +1023,8 @@ footer {
 .contact-form button {
     padding: 1rem;
     font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #fff;
     background-color: #030170;
     border: none;

@@ -970,7 +970,7 @@ footer {
     line-height: 1.6;
     /* Increase line height for better readability */
     color: #333;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0 4rem;
     /* Adds padding on the sides */
 }
@@ -1024,7 +1024,6 @@ footer {
 .contact-form button {
     padding: 1rem;
     font-size: 1.2rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
     color: #fff;
     background-color: #030170;
@@ -1809,7 +1808,7 @@ footer .social-links a img:hover {
     }
 
     .contact-form button {
-        margin-top: 1rem;
+        margin-top: 0;
         margin-bottom: 1rem;
     }
 

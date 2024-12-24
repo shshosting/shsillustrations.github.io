@@ -208,7 +208,7 @@ nav ul li a:hover {
 }
 
 .portfolio {
-    padding: 5rem 0;
+    padding: 7rem 0;
     text-align: center;
 }
 
@@ -300,7 +300,8 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 2rem 0;
+    display: flex;
+    padding: 1.5rem 0;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -489,7 +490,7 @@ footer {
 /* Portfolio Page Styling */
 /* Portfolio Section */
 .portfolio-page {
-    padding-top: 5rem;
+    padding-top: 7rem;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     background-color: #f9f9f9;
@@ -943,16 +944,16 @@ footer {
 /* Contact Page Styling */
 
 .contact-page {
+    display: flex;
     padding-top: 7rem;
     text-align: center;
     margin: 0 auto;
 }
 
 .contact-page h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     color: #333;
-    max-width: 1200px;
 }
 
 
@@ -963,10 +964,9 @@ footer {
     line-height: 1.6;
     /* Increase line height for better readability */
     color: #333;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     padding: 0 2rem;
     /* Adds padding on the sides */
-    max-width: 1000px;
 }
 
 
@@ -986,6 +986,7 @@ footer {
 }
 
 .contact h2 {
+    display: flex;
     margin-bottom: 1.2rem;
     text-align: center;
     font-size: 1.5rem;
@@ -1707,6 +1708,7 @@ footer .social-links a img:hover {
 .partnerships-description {
     line-height: 1.6;
     margin-bottom: 2rem;
+    padding: 0 2rem;
     font-size: 1.2rem;
     color: #555;
 }

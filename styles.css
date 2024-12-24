@@ -1765,3 +1765,9 @@ footer .social-links a img:hover {
     margin-bottom: 0.5rem;
 }
 
+.tips {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #555;
+        }
+

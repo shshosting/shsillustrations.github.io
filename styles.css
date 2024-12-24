@@ -1771,3 +1771,21 @@ footer .social-links a img:hover {
             color: #555;
         }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+    }
+    .contact-form {
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+    }
+
+@media (max-width: 480px) {
+  .contact-page {
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+    }
+    .contact-form {
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+    }
+
+

@@ -307,7 +307,7 @@ nav ul li a:hover {
 
 .contact form {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     max-width: 800px;
     margin: auto;
 }
@@ -992,6 +992,7 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .contact-form label {
@@ -1782,6 +1783,8 @@ footer .social-links a img:hover {
 
     .contact-form {
         padding: 0 2rem; /* Adds 1rem gap on left and right */
+        justify-items: center;
+        align-items: center;
     }
 
 @media (max-width: 480px) {
@@ -1791,6 +1794,8 @@ footer .social-links a img:hover {
     }
     .contact-form {
         padding: 0 2rem; /* Adds 1rem gap on left and right */
+        justify-items: center;
+        align-items: center;
     }
 
 

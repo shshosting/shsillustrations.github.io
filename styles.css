@@ -1790,17 +1790,17 @@ footer .social-links a img:hover {
 @media (max-width: 768px) {
     .contact-page {
         padding: 0 2rem; /* Adds 1rem gap on left and right */
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
 
     .contact {
-        padding: 2 2rem; /* Adds 1rem gap on left and right */
+        padding: 0 2rem; /* Adds 1rem gap on left and right */
         justify-items: center;
         align-items: center;
     }
 
     .contact h2 {
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
 
     .contact-form input {

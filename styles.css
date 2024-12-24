@@ -300,7 +300,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 0 2rem;
+    padding: 2 2rem;
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -314,7 +314,7 @@ nav ul li a:hover {
 .contact form {
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -333,8 +333,8 @@ nav ul li a:hover {
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -971,7 +971,7 @@ footer {
     /* Increase line height for better readability */
     color: #333;
     margin-bottom: 2rem;
-    padding: 0 2rem;
+    padding: 0 4rem;
     /* Adds padding on the sides */
 }
 
@@ -1023,8 +1023,8 @@ footer {
 .contact-form button {
     padding: 1rem;
     font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #fff;
     background-color: #030170;
     border: none;
@@ -1794,13 +1794,13 @@ footer .social-links a img:hover {
     }
 
     .contact {
-        padding: 0 2rem; /* Adds 1rem gap on left and right */
+        padding: 2 2rem; /* Adds 1rem gap on left and right */
         justify-items: center;
         align-items: center;
     }
 
     .contact h2 {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .contact-form input {
@@ -1808,8 +1808,8 @@ footer .social-links a img:hover {
     }
 
     .contact-form button {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     

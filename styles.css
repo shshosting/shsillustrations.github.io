@@ -300,7 +300,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 2 2rem;
+    padding: 0 2rem;
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -308,7 +308,7 @@ nav ul li a:hover {
 }
 
 .contact h2 {
-    margin-top: 2rem;
+    padding-top: 1rem;
 }
 
 .contact form {
@@ -993,6 +993,7 @@ footer {
 
 .contact h2 {
     margin-bottom: 1.2rem;
+    padding-top: 1rem;
     text-align: center;
     font-size: 1.5rem;
 }

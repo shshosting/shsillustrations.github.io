@@ -300,14 +300,12 @@ nav ul li a:hover {
 }
 
 .contact {
-    display: flex;
     padding: 1.5rem 0;
     text-align: center;
     background-color: #f9f9f9;
 }
 
 .contact form {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 800px;
@@ -944,7 +942,6 @@ footer {
 /* Contact Page Styling */
 
 .contact-page {
-    display: flex;
     padding-top: 7rem;
     text-align: center;
     margin: 0 auto;
@@ -986,14 +983,12 @@ footer {
 }
 
 .contact h2 {
-    display: flex;
     margin-bottom: 1.2rem;
     text-align: center;
     font-size: 1.5rem;
 }
 
 .contact-form {
-    display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;

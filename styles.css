@@ -317,7 +317,7 @@ nav ul li a:hover {
     padding: 1rem;
 }
 
-.portfolio-item:hover .overlay {
+.masonry-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
 }
 

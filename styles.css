@@ -1741,6 +1741,13 @@ footer .social-links a img:hover {
     transform: scale(1.1);
 }
 
+.partner-name {
+    margin-top: 0.5rem; /* Adds space between logo and name */
+    font-size: 1rem; /* Adjust font size for readability */
+    color: #333; /* Dark gray text color */
+    font-weight: bold; /* Makes the text stand out */
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 2rem;

@@ -1673,13 +1673,13 @@ footer .social-links {
     margin-top: 1rem;
     display: flex;
     justify-content: center; /* Center the icons in the footer */
-    gap: 4rem; /* Space between icons */
+    gap: 5rem; /* Space between icons */
 }
 
 /* Style for the icons */
 footer .social-links a img {
-    width: 35px; /* Set icon size */
-    height: 35px;
+    width: 40px; /* Set icon size */
+    height: 40px;
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
@@ -1690,12 +1690,12 @@ footer .social-links a img:hover {
 
 @media (max-width: 768px) {
     footer .social-links a img {
-        width: 25px; /* Smaller icons for mobile */
-        height: 25px;
+        width: 30px; /* Smaller icons for mobile */
+        height: 30px;
     }
 
     footer .social-links {
-        gap: 1rem; /* Slightly reduced spacing for smaller screens */
+        gap: 1.5rem; /* Slightly reduced spacing for smaller screens */
     }
 }
 
@@ -1732,7 +1732,7 @@ footer .social-links a img:hover {
 
 .partners-grid a img {
     width: 150px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -1749,7 +1749,7 @@ footer .social-links a img:hover {
 
 .partner-name {
     margin-top: 0.5rem; /* Adds space between logo and name */
-    font-size: 1rem; /* Adjust font size for readability */
+    font-size: 2rem; /* Adjust font size for readability */
     color: #333; /* Dark gray text color */
     font-weight: bold; /* Makes the text stand out */
 }

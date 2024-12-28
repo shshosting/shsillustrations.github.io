@@ -10,6 +10,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <meta name="facebook-domain-verification" content="24iulx8mc5e1gqf2tkl863guabwv3g" />
+
+  <script>
+    // Function to set the favicon dynamically
+    function setFavicon(colorScheme) {
+        const favicon = document.getElementById("favicon");
+        if (colorScheme === "dark") {
+            favicon.href = "icons/favicon5-white.ico"; // Dark mode favicon
+        } else {
+            favicon.href = "icons/favicon6.ico"; // Light mode favicon
+        }
+    }
+
+    // Check the user's preferred color scheme
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+    // Set the favicon based on the current preference
+    setFavicon(prefersDarkMode.matches ? "dark" : "light");
+
+    // Listen for changes in the color scheme
+    prefersDarkMode.addEventListener("change", (e) => {
+        setFavicon(e.matches ? "dark" : "light");
+    });
+  </script>
 </head>
 <body>
   <!-- Navigation -->

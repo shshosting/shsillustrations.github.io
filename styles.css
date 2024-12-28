@@ -553,6 +553,7 @@ footer {
 }
 
 .masonry-item {
+    position: relative;
     margin-bottom: 1rem;
     break-inside: avoid; /* Prevent items from breaking inside columns */
     border-radius: 10px;
@@ -582,7 +583,7 @@ footer {
 /* Hover Effects */
 .masonry-item:hover img,
 .masonry-item:hover video {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 

@@ -1764,6 +1764,7 @@ footer .social-links a img:hover {
     padding-bottom: 1rem;
     height: auto;
     transition: transform 0.3s ease;
+    margin: 0;
 }
 
 .partners-grid a img:hover {
@@ -1774,6 +1775,7 @@ footer .social-links a img:hover {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers logo and text */
+    margin: 1rem;
 }
 
 .partner-name {

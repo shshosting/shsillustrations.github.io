@@ -300,7 +300,8 @@ nav ul li a:hover {
 }
 
 .overlay {
-    position: absolute;
+    z-index: 10;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

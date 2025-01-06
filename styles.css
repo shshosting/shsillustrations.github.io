@@ -207,6 +207,14 @@ nav ul li a:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .hero-content {
+        left: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 .portfolio {
     padding: 7rem 0;
     text-align: center;

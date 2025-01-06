@@ -1792,6 +1792,13 @@ footer .social-links a img:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .partners-grid {
+        gap: 1rem;
+        padding: 0 1rem; /* Adds horizontal padding */
+    }
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 2rem;

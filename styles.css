@@ -1759,15 +1759,14 @@ footer .social-links a img:hover {
     padding-bottom: 1rem;
 }
 
-.partners-grid a img {
+.partner a img {
     width: 150px;
     padding-bottom: 1rem;
     height: auto;
     transition: transform 0.3s ease;
-    gap: 1rem;
 }
 
-.partners-grid a img:hover {
+.partner a img:hover {
     transform: scale(1.1);
 }
 

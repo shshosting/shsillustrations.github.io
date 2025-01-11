@@ -211,6 +211,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+        /* Shorter hero for smaller screens */
+    }
+    
     .hero-content {
         top: 5vh;
         left: auto;

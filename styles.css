@@ -1,4 +1,4 @@
-/* Reset and general styles */ 
+e/* Reset and general styles */ 
 
 * {
     margin: 0;
@@ -182,7 +182,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .hero {
-        margin-top: 60px; /* Adjust to mat
+        margin-top: 60px; /* Adjust to mat */
         /* Shorter hero for smaller screens */
     }
     

@@ -182,9 +182,10 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .hero {
-        height: 60vh;
+        margin-top: 60px; /* Adjust to mat
         /* Shorter hero for smaller screens */
     }
+    
     .hero-content {
         position: relative;
         top: 20vh;

@@ -1790,14 +1790,53 @@ footer .social-links a img:hover {
     padding: 0 1rem;  /* Adds horizontal padding to prevent edge crowding */
 }
 
-@media (max-width: 768px) {
-    footer .social-links a img {
-        width: 30px; /* Smaller icons for mobile */
-        height: 30px;
-    }
+/* Ensures items have proper styling */
+.masonry-item {
+    position: relative;  /* Allows overlay elements to be positioned absolutely */
+    width: 300px;  /* Sets a fixed width for a uniform grid */
+    overflow: hidden;  /* Prevents content from overflowing */
+    border-radius: 10px;  /* Rounds the corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Creates a smooth hover effect */
+}
 
-    footer .social-links {
-        gap: 1.5rem; /* Slightly reduced spacing for smaller screens */
+/* Ensures videos are responsive */
+.masonry-item video {
+    width: 100%;  /* Ensures the video takes the full width of the container */
+    height: auto;  /* Keeps the aspect ratio */
+    border-radius: 10px;  /* Matches the border radius of images */
+}
+
+/* Styles the overlay (appears when hovering over an item) */
+.masonry-item .overlay {
+    position: absolute;  /* Allows positioning relative to the .masonry-item */
+    bottom: 0;  /* Aligns the overlay text at the bottom */
+    background: rgba(0, 0, 0, 0.6);  /* Creates a semi-transparent black overlay */
+    color: white;  /* Ensures the text is readable against the dark background */
+    width: 100%;  /* Stretches overlay across the entire item */
+    text-align: center;  /* Centers the overlay text */
+    padding: 1rem;  /* Adds spacing around the text */
+    opacity: 0;  /* Initially hides the overlay */
+    transition: opacity 0.3s ease;  /* Creates a smooth fade-in effect */
+}
+
+/* Shows the overlay when hovering over an item */
+.masonry-item:hover .overlay {
+    opacity: 1;  /* Makes the overlay fully visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .masonry {
+        column-count: 2; /* Fewer columns on smaller screens */
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
+    }
+}
+
+@media (max-width: 480px) {
+    .masonry {
+        column-count: 1; /* Single column on very small screens */
+        padding: 0 1rem; /* Adds 1rem gap on left and right */
     }
 }
 

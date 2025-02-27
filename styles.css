@@ -1984,6 +1984,12 @@ footer .social-links a img:hover {
         margin-bottom: 1rem;
     }
 
+    /* Default nav styling (desktop) */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
     /* Mobile Navigation for iPhone */
 @media (max-width: 768px) {
     nav ul {
@@ -1994,9 +2000,14 @@ footer .social-links a img:hover {
         top: 60px; /* Below the header */
         right: 0;
         width: 100%;
-        text-align: center;
+        text-align: right;
+        padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
+    }
+
+    nav ul.open {
+        display: flex;
     }
 
     nav ul.active {

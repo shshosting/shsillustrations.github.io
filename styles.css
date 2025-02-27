@@ -1758,6 +1758,49 @@ footer .social-links a img:hover {
     }
 }
 
+/* Creative Science Page */
+.creative-science-page {
+    padding-top: 7rem;  /* Ensures content is not hidden behind the fixed header */
+    text-align: center;  /* Centers the title and description text */
+    background-color: #f9f9f9;  /* Light gray background for a clean look */
+}
+
+.creative-science-page h1 {
+    font-size: 2.5rem;  /* Sets a large, prominent heading size */
+    margin-bottom: 1rem;  /* Adds space below the heading */
+    color: #030170;  /* Uses a deep blue color for emphasis */
+}
+
+.page-description {
+    font-size: 1.2rem;  /* Sets a readable size for the description */
+    color: #555;  /* Uses a soft gray for less visual dominance */
+    margin-bottom: 2rem;  /* Adds space below the description */
+    max-width: 800px;  /* Prevents overly long text lines for better readability */
+    margin-left: auto;  /* Centers the paragraph horizontally */
+    margin-right: auto;  /* Centers the paragraph horizontally */
+    line-height: 1.5;  /* Increases line spacing for readability */
+}
+
+/* Ensures the same layout as the portfolio page */
+.creative-science-page .masonry {
+    display: flex;  /* Uses flexbox for a responsive grid layout */
+    flex-wrap: wrap;  /* Allows items to wrap onto new lines if needed */
+    justify-content: center;  /* Centers the items in the available space */
+    gap: 2rem;  /* Creates spacing between items */
+    padding: 0 1rem;  /* Adds horizontal padding to prevent edge crowding */
+}
+
+@media (max-width: 768px) {
+    footer .social-links a img {
+        width: 30px; /* Smaller icons for mobile */
+        height: 30px;
+    }
+
+    footer .social-links {
+        gap: 1.5rem; /* Slightly reduced spacing for smaller screens */
+    }
+}
+
 /* Partnerships Section */
 
 .partnerships {

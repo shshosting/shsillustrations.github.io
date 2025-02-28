@@ -1997,21 +1997,17 @@ footer .social-links a img:hover {
         flex-direction: column; /* Stack links vertically */
         background-color: rgba(255, 255, 255, 0.9); /* Light background */
         position: absolute;
-        top: 60px; /* Below the header */
+        top: 80px; /* Below the header */
         right: 0;
-        width: 100%;
+        width: 50%;
         text-align: right;
-        padding: 1rem 0;
+        padding: 2rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .nav-links.open {
         display: flex;
-    }
-
-    nav ul.active {
-        display: flex; /* Show menu when active */
     }
 
     nav ul li {

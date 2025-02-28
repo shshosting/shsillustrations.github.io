@@ -2049,7 +2049,7 @@ footer .social-links a img:hover {
 
     /* Hamburger Animation for Close Button */
     .hamburger.open div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
+        transform: rotate(45deg) translate(5px, 7px);
     }
 
     .hamburger.open div:nth-child(2) {
@@ -2057,7 +2057,7 @@ footer .social-links a img:hover {
     }
 
     .hamburger.open div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
+        transform: rotate(-45deg) translate(5px, -7px);
     }
 }
     

@@ -36,7 +36,7 @@ header nav ul li {
 header nav ul li a {
     color: #8f8f8f;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 
@@ -1997,14 +1997,14 @@ footer .social-links a img:hover {
         flex-direction: column; /* Stack links vertically */
         background-color: rgba(255, 255, 255, 0.95); /* Light background */
         position: absolute;
-        top: 80px; /* Below the header */
+        top: 70px; /* Below the header */
         right: 0;
         width: 40%;
-        text-align: right;
+        text-align: center;
         padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
-        border-radius: 10px; /* Rounds the corners of the menu */
+        border-radius: 5px; /* Rounds the corners of the menu */
     }
 
     /* Ensure the links are displayed in column when menu opens */

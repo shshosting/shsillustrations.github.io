@@ -2035,6 +2035,12 @@ footer .social-links a img:hover {
         background: rgba(0, 0, 0, 0.1); /* Light hover effect */
     }
 
+    .nav-links li a.active {
+        font-weight: bold; /* Make active link bold in the drop-down */
+        color: #333
+        border-bottom: none; /* Ensure no underline */
+    }
+
     .hamburger {
         display: block; /* Show menu icon */
         cursor: pointer;

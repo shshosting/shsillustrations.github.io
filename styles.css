@@ -14,7 +14,7 @@ body {
 
 header {
     background: #ffffff;
-    padding: 0.5rem;
+    padding: 0.4rem;
     color: #fff;
 }
 
@@ -36,7 +36,7 @@ header nav ul li {
 header nav ul li a {
     color: #8f8f8f;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -1995,11 +1995,11 @@ footer .social-links a img:hover {
     .nav-links {
         display: none; /* Hide the default menu */
         flex-direction: column; /* Stack links vertically */
-        background-color: rgba(255, 255, 255, 0.8); /* Light background */
+        background-color: rgba(255, 255, 255, 0.95); /* Light background */
         position: absolute;
-        top: 70px; /* Below the header */
+        top: 80px; /* Below the header */
         right: 0;
-        width: 70%;
+        width: 40%;
         text-align: right;
         padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -2028,7 +2028,7 @@ footer .social-links a img:hover {
     .nav-links ul li a {
         display: block; /* Make links take full width */
         padding: 0.4rem;
-        text-align: center;
+        text-align: right;
     }
 
     .nav-links ul li a:hover {
@@ -2054,7 +2054,7 @@ footer .social-links a img:hover {
 
     /* Hamburger Animation for Close Button */
     .hamburger.open div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 7px);
+        transform: rotate(45deg) translate(5px, 8px);
     }
 
     .hamburger.open div:nth-child(2) {
@@ -2062,7 +2062,7 @@ footer .social-links a img:hover {
     }
 
     .hamburger.open div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -7px);
+        transform: rotate(-45deg) translate(5px, -8px);
     }
 }
     

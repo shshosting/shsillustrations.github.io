@@ -2006,12 +2006,28 @@ footer .social-links a img:hover {
         transition: all 0.2s ease-in-out;
     }
 
+    /* Ensure the links are displayed in column when menu opens */
     .nav-links.open {
         display: flex;
+        flex-direction: column; /* Stack links */
     }
 
-    nav ul li {
-        margin: 1rem 0;
+    .nav-links ul {
+        display: flex;
+        flex-direction: column; /* Ensure list items are stacked */
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        margin: 1rem 0; /* Add space between links */
+        width: 100%; /* Ensure full width */
+    }
+
+    .nav-links ul li a {
+        display: block; /* Make links take full width */
+        padding: 1rem;
+        text-align: center;
     }
 
     .hamburger {

@@ -2057,7 +2057,7 @@ footer .social-links a img:hover {
     }
 
     .hamburger.open div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, 5px);
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 }
     

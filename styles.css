@@ -2037,7 +2037,7 @@ footer .social-links a img:hover {
 
     .nav-links ul li a.active {
         font-weight: bold; /* Make active link bold in the drop-down */
-        color: #333
+        color: #333;
         border-bottom: none; /* Ensure no underline */
     }
 

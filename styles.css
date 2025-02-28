@@ -1997,13 +1997,13 @@ footer .social-links a img:hover {
         flex-direction: column; /* Stack links vertically */
         background-color: rgba(255, 255, 255, 0.9); /* Light background */
         position: absolute;
-        top: 80px; /* Below the header */
+        top: 60px; /* Below the header */
         right: 0;
         width: 50%;
         text-align: right;
-        padding: 2rem 0;
+        padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     /* Ensure the links are displayed in column when menu opens */
@@ -2020,13 +2020,13 @@ footer .social-links a img:hover {
     }
 
     .nav-links ul li {
-        margin: 1rem 0; /* Add space between links */
+        margin: 0.5rem 0; /* Add space between links */
         width: 100%; /* Ensure full width */
     }
 
     .nav-links ul li a {
         display: block; /* Make links take full width */
-        padding: 1rem;
+        padding: 0.5rem;
         text-align: center;
     }
 
@@ -2057,7 +2057,7 @@ footer .social-links a img:hover {
     }
 
     .hamburger.open div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(5px, 5px);
     }
 }
     

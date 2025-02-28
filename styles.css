@@ -1995,15 +1995,16 @@ footer .social-links a img:hover {
     .nav-links {
         display: none; /* Hide the default menu */
         flex-direction: column; /* Stack links vertically */
-        background-color: rgba(255, 255, 255, 0.9); /* Light background */
+        background-color: rgba(255, 255, 255, 0.8); /* Light background */
         position: absolute;
-        top: 60px; /* Below the header */
+        top: 70px; /* Below the header */
         right: 0;
-        width: 50%;
+        width: 70%;
         text-align: right;
         padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
+        border-radius: 10px; /* Rounds the corners of the menu */
     }
 
     /* Ensure the links are displayed in column when menu opens */
@@ -2020,14 +2021,18 @@ footer .social-links a img:hover {
     }
 
     .nav-links ul li {
-        margin: 0.5rem 0; /* Add space between links */
+        margin: 0.3rem 0; /* Add space between links */
         width: 100%; /* Ensure full width */
     }
 
     .nav-links ul li a {
         display: block; /* Make links take full width */
-        padding: 0.5rem;
+        padding: 0.4rem;
         text-align: center;
+    }
+
+    .nav-links ul li a:hover {
+        background: rgba(0, 0, 0, 0.1); /* Light hover effect */
     }
 
     .hamburger {

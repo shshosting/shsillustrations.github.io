@@ -22,12 +22,19 @@
                     <img src="/icons/logo-maintight.png" alt="SHS Illustrations Logo" class="logo-image">
                 </a>
             </div>
-            <ul>
-                <li><a href="services.html" class="active">Partners</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="creative-science.html">Creative Science</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="services.html" class="active">Partners</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="creative-science.html">Creative Science</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -162,6 +169,26 @@
 
     // Call the function when the page loads
     document.addEventListener('DOMContentLoaded', fetchTestimonials);
+</script>
+
+     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("open"); // Toggle the menu
+        hamburger.classList.toggle("open"); // Animate hamburger
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+            navMenu.classList.remove("open");
+            hamburger.classList.remove("open");
+        }
+    });
+});
 </script>
 
 </body>

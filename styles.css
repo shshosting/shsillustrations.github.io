@@ -585,8 +585,7 @@ footer {
 .portfolio-page h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #030170;
-    line-height: 1.2;
+    color: #333;
     /* Increase line height for better spacing */
 }
 

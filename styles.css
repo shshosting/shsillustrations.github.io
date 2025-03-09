@@ -355,7 +355,6 @@ nav ul li a:hover {
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     will-change: transform, opacity;
-    transform: translateZ(0);
 }
 
 @supports (-webkit-touch-callout: none) {

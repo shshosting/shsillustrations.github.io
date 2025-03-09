@@ -355,12 +355,14 @@ nav ul li a:hover {
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     will-change: transform, opacity;
+    transform: translateZ(0);
 }
 
 @supports (-webkit-touch-callout: none) {
     .masonry-item:hover video {
         transform: none !important;
         box-shadow: none !important;
+        opacity: 1 !important;
     }
 }    
 

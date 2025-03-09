@@ -1776,7 +1776,7 @@ footer .social-links a img:hover {
 .creative-science-page h1 {
     font-size: 2.5rem;  /* Sets a large, prominent heading size */
     margin-bottom: 1rem;  /* Adds space below the heading */
-    color: #030170;  /* Uses a deep blue color for emphasis */
+    color: #333;  /* Uses a deep blue color for emphasis */
 }
 
 .page-description {

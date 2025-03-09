@@ -348,7 +348,9 @@ nav ul li a:hover {
 }
 
 .masonry-item video {
-    opacity: 1;
+    opacity: 1 !important;
+    -webkit-backface-visibility: hidden;
+    will-change: transform, opacity;
 }
 
 .masonry-item video {

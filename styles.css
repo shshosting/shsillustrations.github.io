@@ -234,7 +234,7 @@ nav ul li a:hover {
 }
 
 .portfolio {
-    padding: 7rem 0;
+    padding-top: 7rem;
     text-align: center;
 }
 
@@ -483,10 +483,6 @@ footer {
 
 /* Services Page Styling */
 
-.services-page {
-    padding-top: 1rem;
-    text-align: center;
-}
 
 .services-page h2 {
     font-size: 2.5rem;
@@ -576,12 +572,6 @@ footer {
     background-color: #f9f9f9;
 }
 
-.portfolio-page h1 {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: #333;
-}
-
 .portfolio-page h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -651,7 +641,7 @@ footer {
 }
 
 .portfolio-section {
-    margin: 3rem 0;
+    margin: 2rem 0;
     /* Adds vertical spacing between portfolio sections */
 }
 

@@ -362,7 +362,6 @@ nav ul li a:hover {
     .masonry-item:hover video {
         transform: none !important;
         box-shadow: none !important;
-        opacity: 0.99 !important;
     }
 }    
 

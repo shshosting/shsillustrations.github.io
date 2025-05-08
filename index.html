@@ -151,16 +151,25 @@
   </footer>
 
   <script>
- document.addEventListener('DOMContentLoaded', () => {
-  const video = document.getElementById('hero-video');
-  if (video) {
-    video.muted = true; // Ensure video is muted
-    video.play().catch((error) => {
-      console.error('Autoplay failed:', error);
-    });
-  }
-});
-  </script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('hero-video');
+    if (video) {
+      video.muted = true;
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', '');
+      video.setAttribute('preload', 'auto');
+      video.removeAttribute('controls'); // Ensure no fallback play button
+
+      // Try to play the video
+      video.play().catch((error) => {
+        console.warn('Autoplay failed:', error);
+        // Optional fallback: replace video with image or GIF
+        // video.style.display = 'none';
+        // document.querySelector('.hero').style.backgroundImage = 'url("IMAGES/frame1.png")';
+      });
+    }
+  });
+</script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {

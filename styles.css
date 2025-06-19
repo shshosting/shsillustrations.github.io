@@ -344,7 +344,7 @@ nav ul li a:hover {
 }
 
 .masonry-item:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 0; /* Show overlay on hover */
 }
 
 .masonry-item video {

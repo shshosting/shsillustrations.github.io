@@ -34,7 +34,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #8f8f8f;
+    color: #ffcc00;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -44,7 +44,7 @@ header nav ul li a {
 
 header nav ul li a.active {
     font-weight: bold;
-    color: #333;
+    color: #70a7e1;
     /* Optional: change color to distinguish further */
     border-bottom: 2px solid #333;
     padding-bottom: 0.3rem;
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a7a6ff;
+    color: #ffcc00;
     padding: 0.3rem 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #002642;
+    color: #f0f0f0;
 }
 
 /* Logo Styles */
@@ -2056,7 +2056,7 @@ footer .social-links a img:hover {
     .hamburger div {
         width: 30px;
         height: 3px;
-        background-color: #333;
+        background-color: #70a7e1;
         margin: 6px 0;
         transition: 0.4s;
     }

@@ -47,7 +47,7 @@ header nav ul li a.active {
     color: #333;
     /* Optional: change color to distinguish further */
     border-bottom: 2px solid #333;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.3rem;
 }
 
 /* Header Styles */
@@ -101,8 +101,12 @@ nav ul li a:hover {
 /* Logo Styles */
 .logo-image {
     max-height: 50px; /* Adjust logo size */
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin-right: 10px;
 }
-
 
 /* Hero Section */
 
@@ -430,15 +434,6 @@ footer {
     display: flex;
     align-items: center;
     /* Aligns logo and text vertically */
-}
-
-.logo-image {
-    width: 80px;
-    /* Adjust the width to fit your design */
-    height: auto;
-    /* Ensures the aspect ratio is maintained */
-    margin-right: 10px;
-    /* Adds space between the logo and text */
 }
 
 .logo span {

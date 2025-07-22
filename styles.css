@@ -47,7 +47,7 @@ header nav ul li a.active {
     color: #1a1a1a;
     /* Optional: change color to distinguish further */
     border-bottom: 0px solid #333;
-    padding-bottom: 0rem;
+    padding-bottom: 0.1rem;
 }
 
 /* Header Styles */
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #3e7c78;
+    color: #6ea8a1;
     padding: 0.1rem 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #5c6b73;
+    color: #79b8b0;
 }
 
 /* Logo Styles */

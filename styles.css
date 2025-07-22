@@ -34,7 +34,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #3e7c78;
+    color: #79b8b0
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -46,7 +46,7 @@ header nav ul li a.active {
     font-weight: bold;
     color: #1a1a1a;
     /* Optional: change color to distinguish further */
-    border-bottom: 0px solid #333;
+    border-bottom: 0.1px solid #333;
     padding-bottom: 0.1rem;
 }
 
@@ -73,7 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 0;
+    padding: 0.1rem 0;
 }
 
 nav ul {
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #6ea8a1;
+    color: #79b8b0;
     padding: 0.1rem 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #79b8b0;
+    color: #6ea8a1;
 }
 
 /* Logo Styles */

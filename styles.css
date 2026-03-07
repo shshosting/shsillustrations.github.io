@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #333;
     line-height: 1;
 }
@@ -34,7 +34,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #79b8b0
+    color: #70A7E1;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -44,7 +44,7 @@ header nav ul li a {
 
 header nav ul li a.active {
     font-weight: bold;
-    color: #5a9791;
+    color: rgb(0, 50, 104);
     /* Optional: change color to distinguish further */
     border-bottom: 0.1px solid #333;
     padding-bottom: 0.1rem;
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #79b8b0;
+    color: #70A7E1;
     padding: 0.1rem 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #5a9791;
+    color: #0065d2;
 }
 
 /* Logo Styles */
@@ -421,14 +421,11 @@ footer {
     padding: 1rem;
 }
 
-// <uniquifier> Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 1000
-.nunito-<fontone> {
-    font-family: "Nunito", sans-serif;
+
+.nunito-fontone {
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <300>;
-    font-style: normal;
-}
+    }
 
 .logo {
     display: flex;
@@ -562,7 +559,7 @@ footer {
 /* Portfolio Section */
 .portfolio-page {
     padding-top: 6rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -1568,9 +1565,6 @@ h3 {
     /* Keep aspect ratio */
 }
 
-
-}
-
 /* About Us Section */
 .about-us {
     padding: 4rem 1rem;
@@ -2070,9 +2064,8 @@ footer .social-links a img:hover {
         opacity: 0; /* Hide middle bar */
     }
 
-    .hamburger.open div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -8px);
+        .hamburger.open div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -8px);
+        }
     }
 }
-    
-

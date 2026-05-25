@@ -516,7 +516,7 @@ footer {
 }
 
 .service-detail p {
-    font-size: 1rem;
+    font-size: 0.75rem;
     line-height: 1.5;
     color: #333;
 }
@@ -932,7 +932,7 @@ footer {
 }
 
 .services-page h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-bottom: 0.5rem;
     color: #030170;
 }
@@ -1134,6 +1134,7 @@ footer {
 
 .box h3 {
     font-size: 1.3rem;
+    color: #4f8fcf;
     margin-bottom: 0.5rem;
     line-height: 1.3;
     /* Ensures spacing between lines in headings */
@@ -2068,5 +2069,61 @@ footer .social-links a img:hover {
         .hamburger.open div:nth-child(3) {
             transform: rotate(-45deg) translate(5px, -8px);
         }
+    }
+}
+
+/* Shared readable text widths */
+.services-page > h2,
+.portfolio-page > h2,
+.creative-science-page > h1,
+.partnerships > h2,
+.testimonials > h2,
+.contact-page > h2,
+.about-us > h2 {
+    max-width: min(100% - 2rem, 900px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-description,
+.page-description,
+.partnerships-description,
+.contact-page > p,
+.about-us > p {
+    width: min(100% - 2rem, 72ch);
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.service-panel {
+    width: min(100% - 2rem, 800px);
+}
+
+.overlay p,
+.testimonial p {
+    width: min(100%, 58ch);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        left: auto;
+        width: min(100% - 2rem, 36rem);
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-page > p,
+    .about-us > p,
+    .page-description,
+    .partnerships-description {
+        width: min(100% - 2.5rem, 38rem);
     }
 }
